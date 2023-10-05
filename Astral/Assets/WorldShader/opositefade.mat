@@ -53,10 +53,12 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SimpleDisolvesize: 10
+    - _SimpleDisolvesize: 0
+    - _SimpleDisolvesize2: 0
+    - _SimpleDisolvesize3: 0
     m_Colors:
-    - _ObjectPosition: {r: -4.034833, g: 1.13, b: 2.4593825e-18, a: 0}
-    - _ObjectPosition2: {r: -11.12, g: 1.035, b: -10.85, a: 0}
-    - _ObjectPosition3: {r: -11.16, g: 1.035, b: 10.8, a: 0}
+    - _ObjectPosition: {r: -10.214563, g: -0.0000019073486, b: 13.843483, a: 0}
+    - _ObjectPosition2: {r: -7.07384, g: 0, b: -9.505318, a: 0}
+    - _ObjectPosition3: {r: -7.07384, g: 0, b: -9.505318, a: 0}
     - _base_colour: {r: 0, g: 0.121106625, b: 1, a: 0}
   m_BuildTextureStacks: []
