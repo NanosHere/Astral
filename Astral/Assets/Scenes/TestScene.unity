@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 555982475}
   - component: {fileID: 555982474}
   - component: {fileID: 555982478}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,6 +925,7 @@ MonoBehaviour:
   cam: {fileID: 330585545}
   lampPrefab: {fileID: 3697993296815566040, guid: e885f9d457ec4d84db45c491a29e58f6,
     type: 3}
+  launchpoint: {fileID: 1385637609}
   lampsOut: 0
   reset: 1
   resetAim: 1
@@ -1176,7 +1177,7 @@ GameObject:
   - component: {fileID: 807176999}
   - component: {fileID: 807176998}
   - component: {fileID: 807176997}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Cube main
   m_TagString: ColOb
   m_Icon: {fileID: 0}
@@ -2402,7 +2403,7 @@ GameObject:
   - component: {fileID: 1997297379}
   - component: {fileID: 1997297378}
   - component: {fileID: 1997297382}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: flor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

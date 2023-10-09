@@ -8,11 +8,14 @@ public class ShootControler : MonoBehaviour
     public Camera cam;
 
     public GameObject lampPrefab;
+    public GameObject launchpoint;
+
     public int lampsOut;
     public bool reset = true;
     public bool resetAim = true;
 
     public bool aimMode = false;
+
 
 
 
@@ -51,12 +54,59 @@ public class ShootControler : MonoBehaviour
 
         if(aimMode== true)
         {
+
+
+
+
+
+            Vector3 worldPoint = Vector3.zero;
             float targetAngle = cam.transform.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0, targetAngle, 0);
-            Quaternion rotationaim = Quaternion.Euler(targetAngle, 0, targetAngle);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 6 * Time.deltaTime);
+           
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 10 * Time.deltaTime);
 
-            fireTransform.rotation = Quaternion.Lerp(transform.rotation, rotation, 6 * Time.deltaTime);
+
+
+
+
+            Vector2 sceenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            Ray ray = cam.ScreenPointToRay(sceenCenterPoint);
+
+            
+            if (Physics.Raycast(ray, out RaycastHit raycasthit, 99f))
+            {
+                debugtransform.position = raycasthit.point;
+                worldPoint = raycasthit.point;
+            }
+            else
+            {
+                Debug.Log("donthit");
+
+                worldPoint = cam.gameObject.transform.position + cam.gameObject.transform.forward * 50;
+                //worldPoint.x = ; 
+                debugtransform.position = worldPoint;
+
+            }
+            Vector3 aimdir = worldPoint;
+             aimdir.y = transform.rotation.y; 
+             aimdir = (worldPoint - launchpoint.transform.position).normalized;
+            
+
+
+
+
+            Quaternion aimrotation = Quaternion.LookRotation(aimdir, Vector3.up);
+
+
+
+            
+            //Debug.Log(aimrotation);
+
+            launchpoint.transform.rotation = Quaternion.Lerp(launchpoint.transform.rotation, aimrotation, 10 * Time.deltaTime);
+
+            // launchpoint.gameObject.transform.rotation = Quaternion.Lerp(launchpoint.gameObject.transform.rotation, rotation, 6 * Time.deltaTime);
+
+
 
             if (Input.GetKey(KeyCode.Mouse0) && lampsOut < 3 && reset == true )
             {
@@ -72,17 +122,17 @@ public class ShootControler : MonoBehaviour
             }
         }
 
+
+
+
     }
 
 
     IEnumerator fireLamp()
     {
         GameObject Projectile = Instantiate(lampPrefab);
-        Projectile.transform.forward = look.transform.forward;
-        Projectile.transform.position = fireTransform.position + fireTransform.forward;
-
-        
-        
+        Projectile.transform.forward = launchpoint.gameObject.transform.forward;
+        Projectile.transform.position = launchpoint.gameObject.transform.position + launchpoint.gameObject.transform.forward;
         Projectile.GetComponent<LampProjectile>().launch();
 
         

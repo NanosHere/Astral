@@ -19,20 +19,23 @@ public class LampProjectile : MonoBehaviour
 
     public void launch()
     {
-        rigidbody.AddForce(transform.forward * (100 * Random.Range(1.3f, 1.7f)), ForceMode.Impulse);
-        source = GetComponent<Cinemachine.CinemachineImpulseSource>();
+        rigidbody.AddForce(transform.forward * (force), ForceMode.Impulse);
+        //source = GetComponent<Cinemachine.CinemachineImpulseSource>();
 
-        source.GenerateImpulse(Camera.main.transform.forward);
+        //source.GenerateImpulse(Camera.main.transform.forward);
     }
 
 
     public void OnCollisionEnter(Collision collision)
     {
-        //if (collision.gameObject.name != "Player")
-        //{
-        //    rigidbody.isKinematic = true;
+        Debug.Log("hitsomething");
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "World1" )
+        {
+            Debug.Log("hitbody");
+            rigidbody.isKinematic = true;
            
-        //}
+        }
     }
 
     public void destroyThis()

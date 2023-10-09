@@ -61,9 +61,9 @@ Material:
     - _splitValue: 0
     m_Colors:
     - _EdgeColor: {r: 0, g: 0, b: 0, a: 0}
-    - _ObjectPosition: {r: 1729.0486, g: -725.0169, b: -1135.0723, a: 0}
-    - _ObjectPosition2: {r: 1431.5879, g: -447.7677, b: -522.6495, a: 0}
-    - _ObjectPosition3: {r: 1101.6003, g: -294.67297, b: -453.3292, a: 0}
+    - _ObjectPosition: {r: -124.99549, g: -1454.1083, b: -36.4173, a: 0}
+    - _ObjectPosition2: {r: -106.9326, g: -1084.992, b: -31.458378, a: 0}
+    - _ObjectPosition3: {r: 37.163754, g: -318.31873, b: 78.06523, a: 0}
     - _Object_Position: {r: 0, g: 0, b: 0, a: 0}
     - _base_colour: {r: 0.028630257, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

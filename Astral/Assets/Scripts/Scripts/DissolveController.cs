@@ -30,34 +30,47 @@ public class DissolveController : MonoBehaviour
                 value1 = 0;
                 value2 = 0;
                 value3 = 0;
+                disolvematerial.SetFloat("_SimpleDisolvesize", value1);
+                disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
+                disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
                 break;
 
             case 1:
                 value1 = 10;
                 value2 = 0;
                 value3 = 0;
+                disolvematerial.SetFloat("_SimpleDisolvesize", value1);
+                disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
+                disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
+                disolvematerial.SetVector("_ObjectPosition", Aoe[0].transform.position);
                 break;
             case 2:
                 value1 = 10;
                 value2 = 10;
                 value3 = 0;
+                disolvematerial.SetFloat("_SimpleDisolvesize", value1);
+                disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
+                disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
+                disolvematerial.SetVector("_ObjectPosition", Aoe[0].transform.position);
+                disolvematerial.SetVector("_ObjectPosition2", Aoe[1].transform.position);
                 break;
             case 3:
                 value1 = 10;
                 value2 = 10;
                 value3 = 10;
+                disolvematerial.SetFloat("_SimpleDisolvesize", value1);
+                disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
+                disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
+                disolvematerial.SetVector("_ObjectPosition", Aoe[0].transform.position);
+                disolvematerial.SetVector("_ObjectPosition2", Aoe[1].transform.position);
+                disolvematerial.SetVector("_ObjectPosition3", Aoe[2].transform.position);
+
                 break;
 
         }
 
        
 
-        disolvematerial.SetFloat("_SimpleDisolvesize", value1);
-        disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
-        disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
-        disolvematerial.SetVector("_ObjectPosition", Aoe[0].transform.position);
-        disolvematerial.SetVector("_ObjectPosition2", Aoe[1].transform.position);
-        disolvematerial.SetVector("_ObjectPosition3", Aoe[2].transform.position);
 
 
 
