@@ -16,6 +16,9 @@ public class ShootControler : MonoBehaviour
 
     public bool aimMode = false;
 
+    public GameObject aimCamera;
+    public GameObject freeCam;
+    public LayerMask contactlayers;
 
 
 
@@ -39,9 +42,12 @@ public class ShootControler : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse1) && aimMode == false && resetAim == true)
         {
 
+
             aimMode = true;
             resetAim = false;
             StartCoroutine(startAim());
+            freeCam.SetActive(false);
+            aimCamera.SetActive(true);
 
         }
         else if(Input.GetKey(KeyCode.Mouse1) && aimMode == true && resetAim == true)
@@ -50,9 +56,12 @@ public class ShootControler : MonoBehaviour
             resetAim = false;
             StartCoroutine(startAim());
 
+            freeCam.SetActive(true);
+            aimCamera.SetActive(false);
+
         }
 
-        if(aimMode== true)
+        if (aimMode== true)
         {
 
 
@@ -73,7 +82,7 @@ public class ShootControler : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(sceenCenterPoint);
 
             
-            if (Physics.Raycast(ray, out RaycastHit raycasthit, 99f))
+            if (Physics.Raycast(ray, out RaycastHit raycasthit, 99f,contactlayers))
             {
                 debugtransform.position = raycasthit.point;
                 worldPoint = raycasthit.point;
