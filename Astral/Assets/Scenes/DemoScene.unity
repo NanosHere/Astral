@@ -259,9 +259,9 @@ GameObject:
   - component: {fileID: 29947718}
   - component: {fileID: 29947717}
   - component: {fileID: 29947721}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: platform2
-  m_TagString: World1
+  m_TagString: World2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +276,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -368,7 +368,7 @@ MonoBehaviour:
   value2: 0
   value3: 0
   Aoe: []
-  disolvematerial: {fileID: 0}
+  disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
 --- !u!1 &63197549
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +769,12 @@ PrefabInstance:
     - target: {fileID: 425097218036768760, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: mask.m_Bits
-      value: 2176
+      value: 6272
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678394036299280376, guid: bd7ba85929ea47745a6c296924f5ce74,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1684937590758484040, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -1892,9 +1897,9 @@ GameObject:
   - component: {fileID: 354498186}
   - component: {fileID: 354498185}
   - component: {fileID: 354498184}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: gateHole
-  m_TagString: World1
+  m_TagString: World2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1926,7 +1931,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

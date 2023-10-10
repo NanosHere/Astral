@@ -42,7 +42,7 @@ public class Effecthitbox : MonoBehaviour
             Debug.Log("World1");
             other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
         }
-        else if (other.gameObject.tag == "World1")
+        else if (other.gameObject.tag == "World2")
         {
             Debug.Log("World2");
             other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
