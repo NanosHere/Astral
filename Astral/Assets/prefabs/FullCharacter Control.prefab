@@ -992,11 +992,11 @@ MonoBehaviour:
   playerChar: {fileID: 4743645515627978013}
   rotationSpeed: 10
   shootie: {fileID: 5917066073821415642}
-  jumpSpeed: 8
+  jumpSpeed: 9
   groundpos: {fileID: 7066482862210156864}
   mask:
     serializedVersion: 2
-    m_Bits: 16055
+    m_Bits: 6272
   sphereRadisus: 0.1
 --- !u!114 &2724141227492695085
 MonoBehaviour:
@@ -1532,7 +1532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5599584845581015679}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2502937, y: 0.12192679, z: 0.031791203, w: 0.95993555}
+  m_LocalRotation: {x: -0.25029373, y: 0.12192685, z: 0.03179122, w: 0.95993555}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2168,7 +2168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7666522735326437474}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2502937, y: 0.12192679, z: 0.031791203, w: 0.95993555}
+  m_LocalRotation: {x: -0.25029373, y: 0.12192685, z: 0.03179122, w: 0.95993555}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2247,7 +2247,7 @@ Transform:
   m_GameObject: {fileID: 8597704336387747635}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0, y: -0.882, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
