@@ -5,9 +5,6 @@ using UnityEngine;
 public class Effecthitbox : MonoBehaviour
 {
 
-
-
-
     public void OnTriggerEnter(Collider other)
     {
        
@@ -15,14 +12,15 @@ public class Effecthitbox : MonoBehaviour
         //Physics.IgnoreLayerCollision(6, 1, true);
         if(other.gameObject.tag == "World1")
         {
-            Debug.Log("World1");
+            Debug.Log("World1 hit");
+            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
         }
         else if (other.gameObject.tag == "World1")
         {
             Debug.Log("World2");
         }
 
-            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("trigger");
+            //other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("trigger");
         Debug.Log(LayerMask.NameToLayer("Players"));
 
         //other.GetComponent<BoxCollider>();
@@ -35,7 +33,7 @@ public class Effecthitbox : MonoBehaviour
     {
        
             Debug.Log("exit");
-            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "trigger");
+            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
         //other.GetComponent<BoxCollider>().enabled = true;
         //Physics.IgnoreLayerCollision(6, 1, false);
         //other.GetComponent<BoxCollider>().includeLayers = 11;

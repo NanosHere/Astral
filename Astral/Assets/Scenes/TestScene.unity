@@ -763,12 +763,12 @@ PrefabInstance:
     - target: {fileID: 4863604240985620811, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 8.380024e-31
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4863604240985620811, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.419596e-32
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5996574536834382703, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -1015,7 +1015,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4224
+    m_Bits: 40960
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
