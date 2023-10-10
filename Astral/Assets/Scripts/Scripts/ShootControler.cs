@@ -85,6 +85,7 @@ public class ShootControler : MonoBehaviour
 
 
 
+
             Vector2 sceenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = cam.ScreenPointToRay(sceenCenterPoint);
 
