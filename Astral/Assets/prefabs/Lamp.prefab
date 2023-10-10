@@ -240,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 50
   rigidbody: {fileID: 0}
+  aoe: {fileID: 586373431784495289}
 --- !u!54 &-1674793191379726448
 Rigidbody:
   m_ObjectHideFlags: 0

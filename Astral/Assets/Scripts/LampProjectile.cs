@@ -7,6 +7,7 @@ public class LampProjectile : MonoBehaviour
     public float force;
     public Rigidbody rigidbody;
     Cinemachine.CinemachineImpulseSource source;
+    public GameObject aoe;
 
 
 
@@ -14,6 +15,7 @@ public class LampProjectile : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.centerOfMass = transform.position;
+        aoe.transform.localScale = new Vector3(39, 39, 39);
     }
    
 
@@ -40,6 +42,7 @@ public class LampProjectile : MonoBehaviour
 
     public void destroyThis()
     {
+        aoe.transform.localScale = new Vector3(.1f, .1f, .1f);
         Destroy(this.gameObject, .5f);
     }
     
