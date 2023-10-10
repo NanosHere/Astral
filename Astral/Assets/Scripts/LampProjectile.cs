@@ -40,7 +40,7 @@ public class LampProjectile : MonoBehaviour
 
     public void destroyThis()
     {
-        Destroy(this.gameObject, 1);
+        Destroy(this.gameObject, .5f);
     }
     
 }

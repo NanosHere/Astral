@@ -29,16 +29,20 @@ public class ShootControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        
-        
 
+        if (Input.GetKey(KeyCode.Q))
+        {
+            StartCoroutine(returnLamp());
+        }
+
+        //start aim mode
         if (Input.GetKey(KeyCode.Mouse1) && aimMode == false && resetAim == true)
         {
 
@@ -50,6 +54,7 @@ public class ShootControler : MonoBehaviour
             aimCamera.SetActive(true);
 
         }
+        //stop aim mode
         else if(Input.GetKey(KeyCode.Mouse1) && aimMode == true && resetAim == true)
         {
             aimMode = false;
@@ -67,7 +72,7 @@ public class ShootControler : MonoBehaviour
 
 
 
-
+            //rotate player charact to face the aim location.
             Vector3 worldPoint = Vector3.zero;
             float targetAngle = cam.transform.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0, targetAngle, 0);
@@ -81,7 +86,7 @@ public class ShootControler : MonoBehaviour
             Vector2 sceenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = cam.ScreenPointToRay(sceenCenterPoint);
 
-            
+            // draw a ray to aim
             if (Physics.Raycast(ray, out RaycastHit raycasthit, 99f,contactlayers))
             {
                 debugtransform.position = raycasthit.point;
@@ -89,8 +94,8 @@ public class ShootControler : MonoBehaviour
             }
             else
             {
-                Debug.Log("donthit");
-
+                
+                // if does not hit anything play a shoot location
                 worldPoint = cam.gameObject.transform.position + cam.gameObject.transform.forward * 50;
                 //worldPoint.x = ; 
                 debugtransform.position = worldPoint;
@@ -109,14 +114,14 @@ public class ShootControler : MonoBehaviour
 
 
             
-            //Debug.Log(aimrotation);
-
+            
+            // change launch direction
             launchpoint.transform.rotation = Quaternion.Lerp(launchpoint.transform.rotation, aimrotation, 10 * Time.deltaTime);
 
             // launchpoint.gameObject.transform.rotation = Quaternion.Lerp(launchpoint.gameObject.transform.rotation, rotation, 6 * Time.deltaTime);
 
 
-
+            // launch the lamp.
             if (Input.GetKey(KeyCode.Mouse0) && lampsOut < 3 && reset == true )
             {
                 
@@ -165,6 +170,31 @@ public class ShootControler : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         resetAim = true;
 
+    }
+
+    IEnumerator returnLamp()
+    {
+        GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
+        Debug.Log(lamps.Length);
+        switch (lamps.Length)
+        {
+            case 0:
+                
+                    break;
+            case 1:
+                lamps[0].GetComponent<LampProjectile>().destroyThis();
+                break;
+            case 2:
+                lamps[1].GetComponent<LampProjectile>().destroyThis();
+                break;
+            case 3:
+                lamps[2].GetComponent<LampProjectile>().destroyThis();
+                break;
+
+
+        }
+
+        yield return new WaitForSeconds(.5f);
     }
 
 
