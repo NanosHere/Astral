@@ -19,6 +19,7 @@ public class ShootControler : MonoBehaviour
     public GameObject aimCamera;
     public GameObject freeCam;
     public LayerMask contactlayers;
+    public PlayerMovement moving;
 
 
 
@@ -76,8 +77,9 @@ public class ShootControler : MonoBehaviour
             Vector3 worldPoint = Vector3.zero;
             float targetAngle = cam.transform.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0, targetAngle, 0);
-           
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 10 * Time.deltaTime);
+
+            //transform.rotation 
+            moving.playerChar.transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 10 * Time.deltaTime);
 
 
 
