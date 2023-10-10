@@ -104,6 +104,8 @@ public class ShootControler : MonoBehaviour
                 debugtransform.position = worldPoint;
 
             }
+
+            //get aim direction based on worldposition;
             Vector3 aimdir = worldPoint;
              aimdir.y = transform.rotation.y; 
              aimdir = (worldPoint - launchpoint.transform.position).normalized;
@@ -144,7 +146,7 @@ public class ShootControler : MonoBehaviour
 
     }
 
-
+    // create a lamp and launch it
     IEnumerator fireLamp()
     {
         GameObject Projectile = Instantiate(lampPrefab);
@@ -175,6 +177,7 @@ public class ShootControler : MonoBehaviour
 
     }
 
+    // when q is pressed destroy object and let player shoot one
     IEnumerator returnLamp()
     {
         GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
@@ -186,17 +189,20 @@ public class ShootControler : MonoBehaviour
                     break;
             case 1:
                 lamps[0].GetComponent<LampProjectile>().destroyThis();
+                lampsOut = 0;
                 break;
             case 2:
                 lamps[1].GetComponent<LampProjectile>().destroyThis();
+                lampsOut = 1;
                 break;
             case 3:
                 lamps[2].GetComponent<LampProjectile>().destroyThis();
+                lampsOut = 2;
                 break;
 
 
         }
-
+        
         yield return new WaitForSeconds(.5f);
     }
 
