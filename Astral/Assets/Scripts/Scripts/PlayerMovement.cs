@@ -12,6 +12,16 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     public ShootControler shootie;
 
+    //jump stuff
+    [Header("jump")]
+
+    public float jumpSpeed =10;
+    private bool isGrounded;
+    public Transform groundpos;
+    public LayerMask mask;
+    public float sphereRadisus;
+    public RaycastHit groundcheckHit;
+
     
     
 
@@ -70,5 +80,26 @@ public class PlayerMovement : MonoBehaviour
         
          }
 
+
+
+
+        Debug.Log(checkGround());
+
+        //jump script + check ground
+        if (Input.GetKey(KeyCode.Space) && checkGround())
+        {
+            m_Rigidbody.velocity += jumpSpeed * Vector3.up;
+        }
+        
+
+
+
+
+    }
+    
+    // check if player is on ground
+    bool checkGround()
+    {
+        return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
     }
 }
