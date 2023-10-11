@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11105108784513731}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2502937, y: 0.12192679, z: 0.031791203, w: 0.95993555}
+  m_LocalRotation: {x: -0.23532341, y: 0.1224068, z: 0.029889742, w: 0.9637148}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1532,7 +1532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5599584845581015679}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.25029373, y: 0.12192685, z: 0.03179122, w: 0.95993555}
+  m_LocalRotation: {x: -0.23532343, y: 0.12240684, z: 0.029889751, w: 0.9637147}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1664,6 +1664,7 @@ GameObject:
   - component: {fileID: 8695112518706569487}
   - component: {fileID: 6387625243952483044}
   - component: {fileID: 6478241410923037399}
+  - component: {fileID: 3498861229831356278}
   m_Layer: 15
   m_Name: aim Camera
   m_TagString: Player
@@ -1832,6 +1833,36 @@ MonoBehaviour:
     m_FrequencyGain: 1
     m_Duration: 1
     m_NoiseOffsets: {x: 167.77954, y: 479.58112, z: 158.56802}
+--- !u!114 &3498861229831356278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317808051027239644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 14007
+  m_IgnoreTag: Player
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 1
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1 &6639650502629307983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,7 +2199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7666522735326437474}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.25029373, y: 0.12192685, z: 0.03179122, w: 0.95993555}
+  m_LocalRotation: {x: -0.23532343, y: 0.122406796, z: 0.029889748, w: 0.9637147}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
