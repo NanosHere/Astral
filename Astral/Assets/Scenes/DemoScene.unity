@@ -5247,10 +5247,10 @@ MonoBehaviour:
   m_text: 'Lamp Controls
 
 
-    right mouse button= Zoom
+    right mouse button= Zoom in/out
 
-    left mouse button =
-    Shoot
+    left mouse button
+    = Shoot
 
     q= Return last lamp'
   m_isRightToLeft: 0
@@ -6164,6 +6164,8 @@ MonoBehaviour:
     S=Backards
 
     A= Left
+
+    D=Right
 
     Space=Jump'
   m_isRightToLeft: 0
