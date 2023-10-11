@@ -13,6 +13,12 @@ public class DissolveController : MonoBehaviour
     public Material disolvematerial;
     //public Vector3 closestPoint;
 
+
+    private void Start()
+    {
+        disolvematerial = this.gameObject.GetComponent<Renderer>().material;
+    }
+
     // Update is called once per frame
     private void Update()
     {
