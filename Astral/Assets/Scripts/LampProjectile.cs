@@ -16,6 +16,7 @@ public class LampProjectile : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.centerOfMass = transform.position;
         aoe.transform.localScale = new Vector3(39, 39, 39);
+        aoe.gameObject.SetActive(false);
     }
    
 
@@ -36,6 +37,7 @@ public class LampProjectile : MonoBehaviour
         {
             Debug.Log("hitbody");
             rigidbody.isKinematic = true;
+            aoe.gameObject.SetActive(true);
            
         }
     }
