@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 101890101}
   - component: {fileID: 101890100}
   - component: {fileID: 101890099}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallRPuzzle1-2 (3)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 210029998}
   - component: {fileID: 210029997}
   - component: {fileID: 210029996}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallEnd1
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -6483,7 +6483,7 @@ GameObject:
   - component: {fileID: 1427684577}
   - component: {fileID: 1427684576}
   - component: {fileID: 1427684575}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: floorPuzzle1-2 (2)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -8451,7 +8451,7 @@ GameObject:
   - component: {fileID: 2066854454}
   - component: {fileID: 2066854453}
   - component: {fileID: 2066854452}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallLPuzzle1-2 (3)
   m_TagString: World1
   m_Icon: {fileID: 0}
