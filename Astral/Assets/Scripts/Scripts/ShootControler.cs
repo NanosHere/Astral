@@ -51,9 +51,8 @@ public class ShootControler : MonoBehaviour
             aimMode = true;
             resetAim = false;
             StartCoroutine(startAim());
-            freeCam.SetActive(false);
-            aimCamera.SetActive(true);
-
+            aimCamera.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 10;
+            freeCam.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 9;
         }
         //stop aim mode
         else if(Input.GetKey(KeyCode.Mouse1) && aimMode == true && resetAim == true)
@@ -61,9 +60,9 @@ public class ShootControler : MonoBehaviour
             aimMode = false;
             resetAim = false;
             StartCoroutine(startAim());
+            aimCamera.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 9;
+            freeCam.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 10;
 
-            freeCam.SetActive(true);
-            aimCamera.SetActive(false);
 
         }
 
