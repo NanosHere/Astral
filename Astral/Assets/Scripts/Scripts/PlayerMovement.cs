@@ -66,20 +66,21 @@ public class PlayerMovement : MonoBehaviour
 
         //using inputs find the players rotation direction.
         Vector3 viewdir = transform.position - new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
+        orientation.forward = viewdir;
         //orientation.forward = viewdir.normalized;
 
-        // Vector3 inputDir = orientation.forward * m_Input.z + orientation.right * m_Input.x;
+         Vector3 inputDir = orientation.forward * m_Input.z + orientation.right * m_Input.x;
 
 
         if(shootie.aimMode == false)
         {
 
        
-            //if(inputDir != Vector3.zero)
-            //{
+            if(inputDir != Vector3.zero)
+            {
                 //rotate player character;
-              //  playerChar.forward = Vector3.Slerp(playerChar.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
-            //}
+                playerChar.forward = Vector3.Slerp(playerChar.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
+            }
         
          }
 

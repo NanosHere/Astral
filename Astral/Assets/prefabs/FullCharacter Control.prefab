@@ -9,9 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1872776679189424113}
-  - component: {fileID: 249458595053198960}
-  - component: {fileID: 3665051337063423552}
-  - component: {fileID: 7273684808294736123}
   m_Layer: 15
   m_Name: lookatpoint
   m_TagString: Player
@@ -28,83 +25,12 @@ Transform:
   m_GameObject: {fileID: 145361479690121761}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.18, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6662237568019888740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &249458595053198960
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145361479690121761}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3665051337063423552
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145361479690121761}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7273684808294736123
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145361479690121761}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &568103370039612408
 GameObject:
   m_ObjectHideFlags: 3
@@ -130,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568103370039612408}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2900282, y: 0.6235245, z: -0.26801544, w: 0.67473596}
+  m_LocalRotation: {x: 0.29002815, y: 0.62352455, z: -0.2680155, w: 0.6747359}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -199,7 +125,7 @@ GameObject:
   - component: {fileID: 428034521693226908}
   m_Layer: 15
   m_Name: aimcam
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,7 +484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074656864147795865}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06920667, y: 0.025504552, z: -0.00828692, w: 0.99724185}
+  m_LocalRotation: {x: -0.011564479, y: -0.0038631447, z: 0.000687642, w: 0.99992543}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -671,7 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.2298968, z: -8.923636}
+  m_FollowOffset: {x: 0, y: 1.5411539, z: -9.278853}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -691,7 +617,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -138.76796
+    Value: -140.3461
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -1124,7 +1050,7 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 6272
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1132,9 +1058,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &425097218036768760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,7 +1122,7 @@ MonoBehaviour:
   freeCam: {fileID: 6553338690653559496}
   contactlayers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 3072
   moving: {fileID: 425097218036768760}
   debugtransform: {fileID: 1872776679189424113}
   fireTransform: {fileID: 3546593221160455132}
@@ -1225,7 +1151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3424211406897858193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06920669, y: 0.025504593, z: -0.008286932, w: 0.99724185}
+  m_LocalRotation: {x: -0.011564479, y: -0.0038631447, z: 0.000687642, w: 0.99992543}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1516,7 +1442,7 @@ GameObject:
   - component: {fileID: 4534185081130724783}
   m_Layer: 15
   m_Name: FreeLook Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1529,8 +1455,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6553338690653559496}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.011369509, y: 0.9799284, z: -0.19021106, w: 0.058573384}
-  m_LocalPosition: {x: -0.5864272, y: 3.2458968, z: 8.904346}
+  m_LocalRotation: {x: 0.004003507, y: 0.99468964, z: -0.093636826, w: 0.042528648}
+  m_LocalPosition: {x: -0.86452717, y: 2.557154, z: 9.238491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1579,7 +1505,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_YAxis:
-    Value: 0.5955203
+    Value: 0.53997856
     m_SpeedMode: 0
     m_MaxSpeed: 2
     m_AccelTime: 0.2
@@ -1603,7 +1529,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -138.76796
+    Value: -140.3461
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -1764,7 +1690,7 @@ GameObject:
   - component: {fileID: 8284620016164265175}
   m_Layer: 15
   m_Name: lookingarea mid
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1795,7 +1721,7 @@ GameObject:
   - component: {fileID: 2905822083120536103}
   m_Layer: 15
   m_Name: lookingarea below
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1945,7 +1871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983202275455916042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06920669, y: 0.025504593, z: -0.008286932, w: 0.99724185}
+  m_LocalRotation: {x: -0.011564479, y: -0.0038631447, z: 0.000687642, w: 0.99992543}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2058,7 +1984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.2298968, z: -8.923636}
+  m_FollowOffset: {x: 0, y: 1.5411539, z: -9.278853}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -2078,7 +2004,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -138.76796
+    Value: -140.3461
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -2137,7 +2063,7 @@ GameObject:
   - component: {fileID: 7066482862210156864}
   m_Layer: 15
   m_Name: groundpos
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2247,7 +2173,7 @@ GameObject:
   - component: {fileID: 3675063604511834451}
   m_Layer: 15
   m_Name: lookingarea up
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2326,7 +2252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 2.2298968, z: -8.923636}
+  m_FollowOffset: {x: 0, y: 1.5411539, z: -9.278853}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -2346,7 +2272,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -138.76796
+    Value: -140.3461
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
