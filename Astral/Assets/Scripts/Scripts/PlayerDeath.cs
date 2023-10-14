@@ -10,7 +10,7 @@ public class PlayerDeath : MonoBehaviour
 
     void OnTriggerEnter(Collider hit)
     {
-        if (hit.gameObject.tag == "Player")
+        if (hit.gameObject.layer == LayerMask.NameToLayer("Players"))
         {
             hit.gameObject.transform.position = playerReset.position;
         }

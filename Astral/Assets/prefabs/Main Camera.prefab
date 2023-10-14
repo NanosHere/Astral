@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4421434451111057769
+--- !u!1 &425018488327370810
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7602086607111444580}
-  - component: {fileID: 403522941006128497}
-  - component: {fileID: 8954859482617382997}
-  - component: {fileID: 7164543904796535817}
-  - component: {fileID: 2014903091303337124}
+  - component: {fileID: 3812756091384149471}
+  - component: {fileID: 8081696277259337188}
+  - component: {fileID: 8482616860144146994}
+  - component: {fileID: 2726451251189090612}
+  - component: {fileID: 251260697381093906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -20,28 +20,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7602086607111444580
+--- !u!4 &3812756091384149471
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421434451111057769}
+  m_GameObject: {fileID: 425018488327370810}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0038336443, y: 0.99553126, z: -0.082113, w: 0.046478793}
-  m_LocalPosition: {x: -1.0597792, y: 2.5571542, z: 10.550253}
+  m_LocalRotation: {x: 0.0014368902, y: 0.99819225, z: -0.053862415, w: 0.02662882}
+  m_LocalPosition: {x: -0.39274347, y: 2.0271838, z: 14.309406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &403522941006128497
+--- !u!20 &8081696277259337188
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421434451111057769}
+  m_GameObject: {fileID: 425018488327370810}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -86,21 +86,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8954859482617382997
+--- !u!81 &8482616860144146994
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421434451111057769}
+  m_GameObject: {fileID: 425018488327370810}
   m_Enabled: 1
---- !u!114 &7164543904796535817
+--- !u!114 &2726451251189090612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421434451111057769}
+  m_GameObject: {fileID: 425018488327370810}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
@@ -138,13 +138,13 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &2014903091303337124
+--- !u!114 &251260697381093906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421434451111057769}
+  m_GameObject: {fileID: 425018488327370810}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
@@ -155,13 +155,40 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 0
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
-    m_Style: 1
+    m_Style: 7
     m_Time: 0.5
     m_CustomCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2.867015
+        outSlope: 2.867015
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.15256947
+      - serializedVersion: 3
+        time: 0.31580275
+        value: 0.6728942
+        inSlope: 0.87858593
+        outSlope: 0.87858593
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0.09719834
+        outSlope: 0.09719834
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.41250002
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

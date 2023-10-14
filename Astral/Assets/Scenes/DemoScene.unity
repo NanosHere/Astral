@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 20208627}
   - component: {fileID: 20208626}
   - component: {fileID: 20208630}
+  - component: {fileID: 20208631}
   m_Layer: 11
   m_Name: platform3
   m_TagString: World1
@@ -246,6 +247,20 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
+--- !u!114 &20208631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20208625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &29947716
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +274,7 @@ GameObject:
   - component: {fileID: 29947718}
   - component: {fileID: 29947717}
   - component: {fileID: 29947721}
+  - component: {fileID: 29947722}
   m_Layer: 12
   m_Name: platform2
   m_TagString: World2
@@ -369,6 +385,20 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
+--- !u!114 &29947722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29947716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &63197549
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +412,7 @@ GameObject:
   - component: {fileID: 63197552}
   - component: {fileID: 63197551}
   - component: {fileID: 63197550}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: gateFloor2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -406,6 +436,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &63197551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -505,6 +536,7 @@ GameObject:
   - component: {fileID: 66455808}
   - component: {fileID: 66455807}
   - component: {fileID: 66455811}
+  - component: {fileID: 66455812}
   m_Layer: 11
   m_Name: platform1
   m_TagString: World1
@@ -615,6 +647,20 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
+--- !u!114 &66455812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66455806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &67322816
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +784,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &97826610
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +941,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &101890100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1017,6 +1065,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &107072851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1140,6 +1189,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &109068633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1316,6 +1366,7 @@ GameObject:
   - component: {fileID: 148646175}
   - component: {fileID: 148646174}
   - component: {fileID: 148646173}
+  - component: {fileID: 148646176}
   m_Layer: 12
   m_Name: gateholeshitbox1
   m_TagString: World2
@@ -1409,6 +1460,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148646171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &148646176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148646171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &193410789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1510,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &193410791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1569,6 +1634,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &210029997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1778,6 +1844,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &354498183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,6 +1882,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &354498185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1944,6 +2012,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &367795671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2043,7 +2112,7 @@ GameObject:
   - component: {fileID: 397646443}
   - component: {fileID: 397646442}
   - component: {fileID: 397646441}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallLPuzzle1-2 (1)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -2067,6 +2136,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &397646442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2276,6 +2346,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &446111048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,7 +2360,7 @@ GameObject:
   - component: {fileID: 446111051}
   - component: {fileID: 446111050}
   - component: {fileID: 446111049}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: gateWallL2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -2313,6 +2384,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &446111050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2522,6 +2594,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &470263948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2632,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &470263950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2682,6 +2756,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &514888488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2891,6 +2966,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!1 &570332356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,6 +2979,7 @@ GameObject:
   - component: {fileID: 570332360}
   - component: {fileID: 570332359}
   - component: {fileID: 570332358}
+  - component: {fileID: 570332361}
   m_Layer: 12
   m_Name: gateholeshitbox6
   m_TagString: World2
@@ -2996,6 +3073,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570332356}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &570332361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570332356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &589443078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3314,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &659020465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3438,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &661289514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,6 +3476,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &661289516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3593,6 +3686,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &663363228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,7 +3700,7 @@ GameObject:
   - component: {fileID: 663363231}
   - component: {fileID: 663363230}
   - component: {fileID: 663363229}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallRPuzzle1-2 (1)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -3630,6 +3724,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &663363230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4027,6 +4122,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &749307606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4125,6 +4221,7 @@ GameObject:
   - component: {fileID: 760271013}
   - component: {fileID: 760271012}
   - component: {fileID: 760271011}
+  - component: {fileID: 760271014}
   m_Layer: 12
   m_Name: gateholeshitbox5
   m_TagString: World2
@@ -4218,6 +4315,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760271009}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &760271014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760271009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &810254459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,7 +4341,7 @@ GameObject:
   - component: {fileID: 810254462}
   - component: {fileID: 810254461}
   - component: {fileID: 810254460}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallRPuzzle1-2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -4255,6 +4365,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &810254461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4378,6 +4489,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &833681557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4477,7 +4589,7 @@ GameObject:
   - component: {fileID: 880965951}
   - component: {fileID: 880965950}
   - component: {fileID: 880965949}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: gateWallR2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -4501,6 +4613,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &880965950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4600,7 +4713,7 @@ GameObject:
   - component: {fileID: 950555672}
   - component: {fileID: 950555671}
   - component: {fileID: 950555670}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: floorPuzzle1-2 (1)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -4624,6 +4737,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &950555671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4833,6 +4947,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1098021741
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +5071,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1137460133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,6 +5109,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &1137460135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5389,7 +5506,7 @@ GameObject:
   - component: {fileID: 1193815378}
   - component: {fileID: 1193815377}
   - component: {fileID: 1193815376}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: gateWallL2 (1)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -5413,6 +5530,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &1193815377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5622,6 +5740,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1229749658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,7 +5754,7 @@ GameObject:
   - component: {fileID: 1229749661}
   - component: {fileID: 1229749660}
   - component: {fileID: 1229749659}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallEndPuzzle1-2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -5659,6 +5778,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &1229749660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5758,7 +5878,7 @@ GameObject:
   - component: {fileID: 1256184686}
   - component: {fileID: 1256184685}
   - component: {fileID: 1256184684}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallLPuzzle1-2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -5782,6 +5902,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &1256184685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5881,7 +6002,7 @@ GameObject:
   - component: {fileID: 1287335361}
   - component: {fileID: 1287335360}
   - component: {fileID: 1287335359}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallLPuzzle1-2 (2)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -5905,6 +6026,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &1287335360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6364,6 +6486,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1427684574
 GameObject:
   m_ObjectHideFlags: 0
@@ -6401,6 +6524,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &1427684576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6524,6 +6648,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &1472632634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6647,6 +6772,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &1488731829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6733,178 +6859,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1506086779
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1506086782}
-  - component: {fileID: 1506086781}
-  - component: {fileID: 1506086780}
-  - component: {fileID: 1506086784}
-  - component: {fileID: 1506086783}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1506086780
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506086779}
-  m_Enabled: 1
---- !u!20 &1506086781
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506086779}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.1
-  far clip plane: 5000
-  field of view: 40
-  orthographic: 0
-  orthographic size: 10
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1506086782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506086779}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0040151416, y: 0.9919776, z: -0.12206427, w: 0.032629777}
-  m_LocalPosition: {x: -0.4810655, y: 3.2458968, z: 13.884565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1506086783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506086779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 1
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1506086784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506086779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
 --- !u!1 &1511606942
 GameObject:
   m_ObjectHideFlags: 0
@@ -7162,7 +7116,7 @@ GameObject:
   - component: {fileID: 1606800343}
   - component: {fileID: 1606800342}
   - component: {fileID: 1606800341}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: gateWallR2 (1)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -7186,6 +7140,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!65 &1606800342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7395,6 +7350,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1670705804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7407,6 +7363,7 @@ GameObject:
   - component: {fileID: 1670705808}
   - component: {fileID: 1670705807}
   - component: {fileID: 1670705806}
+  - component: {fileID: 1670705809}
   m_Layer: 12
   m_Name: gateholeshitbox4
   m_TagString: World2
@@ -7500,6 +7457,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670705804}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1670705809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670705804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1001 &1694719485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7530,58 +7500,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000022395398
+      value: 0.0000000074505513
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000040978193
+      value: -0.0000000025611369
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010244548
+      value: 2.7648636e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5864272
+      value: -0.04019565
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2458968
+      value: 2.1160002
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.904346
+      value: 9.349915
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.032629736
+      value: 0.0021458203
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0040151356
+      value: 0.00012579096
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9919776
+      value: 0.9982839
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.12206425
+      value: -0.058520786
       objectReference: {fileID: 0}
     - target: {fileID: 5352466653363042221, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7616,17 +7601,17 @@ PrefabInstance:
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000022395398
+      value: 0.00000001117587
       objectReference: {fileID: 0}
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000040978193
+      value: -0.0000000032596286
       objectReference: {fileID: 0}
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010244548
+      value: 3.6379783e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5996574536834382703, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7641,12 +7626,12 @@ PrefabInstance:
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 12.86
       objectReference: {fileID: 0}
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9802184
+      value: 82.02
       objectReference: {fileID: 0}
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7736,17 +7721,17 @@ PrefabInstance:
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000022395398
+      value: 0.00000001117587
       objectReference: {fileID: 0}
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000040978193
+      value: -0.0000000032596286
       objectReference: {fileID: 0}
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010244548
+      value: 3.6379783e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7765,6 +7750,7 @@ GameObject:
   - component: {fileID: 1706342468}
   - component: {fileID: 1706342467}
   - component: {fileID: 1706342466}
+  - component: {fileID: 1706342469}
   m_Layer: 12
   m_Name: gateholeshitbox2
   m_TagString: World2
@@ -7858,6 +7844,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706342464}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1706342469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706342464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1717727678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7871,7 +7870,7 @@ GameObject:
   - component: {fileID: 1717727681}
   - component: {fileID: 1717727680}
   - component: {fileID: 1717727679}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: floorPuzzle1-2
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -7895,6 +7894,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
+  gotDisolved: 0
 --- !u!65 &1717727680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8238,6 +8238,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1784534232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,6 +8438,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1841390393
 GameObject:
   m_ObjectHideFlags: 0
@@ -8560,6 +8562,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1965938797
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,6 +8820,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &1980508209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8830,7 +8834,7 @@ GameObject:
   - component: {fileID: 1980508212}
   - component: {fileID: 1980508211}
   - component: {fileID: 1980508210}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: wallRPuzzle1-2 (2)
   m_TagString: World1
   m_Icon: {fileID: 0}
@@ -8854,6 +8858,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &1980508211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9063,6 +9068,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &2066854451
 GameObject:
   m_ObjectHideFlags: 0
@@ -9100,6 +9106,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
+  gotDisolved: 0
 --- !u!65 &2066854453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9309,6 +9316,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &2102900983
 GameObject:
   m_ObjectHideFlags: 0
@@ -9343,9 +9351,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -38.5, y: -38.5}
+  m_SizeDelta: {x: 77, y: 77}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &2102900985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9507,6 +9515,7 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
 --- !u!1 &2128980461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9630,11 +9639,80 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
+  gotDisolved: 0
+--- !u!1001 &1680423973919352217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425018488327370810, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06516605
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.976
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.36991
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0021458236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00012579115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9982839
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.058520798
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a436fdd0d63a3da4d9f0abac82aae3d3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1506086782}
+  - {fileID: 1680423973919352217}
   - {fileID: 1173757673}
   - {fileID: 1524097359}
   - {fileID: 536465162}

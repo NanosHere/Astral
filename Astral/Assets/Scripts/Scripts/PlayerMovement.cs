@@ -88,11 +88,21 @@ public class PlayerMovement : MonoBehaviour
 
 
         Debug.Log(checkGround());
-
-        //jump script + check ground
-        if (Input.GetKey(KeyCode.Space) && checkGround())
+        if(checkGround()== true)
         {
-            m_Rigidbody.velocity += jumpSpeed * Vector3.up;
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+        //jump script + check ground
+        if (Input.GetKey(KeyCode.Space) && isGrounded == true)
+        {
+            if(groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable == true) { 
+                m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
+                m_Rigidbody.AddForce(new Vector3(0,jumpSpeed,0), ForceMode.Impulse);
+            }
         }
         
 
@@ -104,6 +114,9 @@ public class PlayerMovement : MonoBehaviour
     // check if player is on ground
     bool checkGround()
     {
+        
+
+
         return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
     }
 }
