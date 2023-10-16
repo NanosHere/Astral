@@ -247,7 +247,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!114 &20208631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +384,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!114 &29947722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +410,7 @@ GameObject:
   - component: {fileID: 63197552}
   - component: {fileID: 63197551}
   - component: {fileID: 63197550}
+  - component: {fileID: 63197555}
   m_Layer: 7
   m_Name: gateFloor2
   m_TagString: World1
@@ -436,7 +435,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &63197551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -523,6 +521,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63197555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63197549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &66455806
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +658,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!114 &66455812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,6 +684,7 @@ GameObject:
   - component: {fileID: 67322818}
   - component: {fileID: 67322817}
   - component: {fileID: 67322821}
+  - component: {fileID: 67322822}
   m_Layer: 7
   m_Name: wallLPuzzle1-1 (2)
   m_TagString: World1
@@ -784,7 +795,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &67322822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67322816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &97826610
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +821,8 @@ GameObject:
   - component: {fileID: 97826612}
   - component: {fileID: 97826611}
   - component: {fileID: 97826615}
-  m_Layer: 0
+  - component: {fileID: 97826616}
+  m_Layer: 7
   m_Name: killbox
   m_TagString: killbox
   m_Icon: {fileID: 0}
@@ -904,6 +928,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerReset: {fileID: 1524097359}
+--- !u!114 &97826616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97826610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
 --- !u!1 &101890098
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +954,7 @@ GameObject:
   - component: {fileID: 101890101}
   - component: {fileID: 101890100}
   - component: {fileID: 101890099}
+  - component: {fileID: 101890104}
   m_Layer: 7
   m_Name: wallRPuzzle1-2 (3)
   m_TagString: World1
@@ -941,7 +979,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &101890100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1028,6 +1065,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &101890104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101890098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &107072849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1091,7 @@ GameObject:
   - component: {fileID: 107072852}
   - component: {fileID: 107072851}
   - component: {fileID: 107072850}
+  - component: {fileID: 107072855}
   m_Layer: 7
   m_Name: floorPuzzle1-1 (2)
   m_TagString: World1
@@ -1065,7 +1116,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &107072851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1152,6 +1202,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107072855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107072849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &109068631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1228,7 @@ GameObject:
   - component: {fileID: 109068634}
   - component: {fileID: 109068633}
   - component: {fileID: 109068632}
+  - component: {fileID: 109068637}
   m_Layer: 7
   m_Name: gateWallR1
   m_TagString: World1
@@ -1189,7 +1253,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &109068633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1276,6 +1339,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109068637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109068631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &131326011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1562,8 @@ GameObject:
   - component: {fileID: 193410792}
   - component: {fileID: 193410791}
   - component: {fileID: 193410790}
+  - component: {fileID: 193410795}
+  - component: {fileID: 193410796}
   m_Layer: 7
   m_Name: gateFloor1
   m_TagString: World1
@@ -1510,7 +1588,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &193410791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1597,6 +1674,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193410795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193410789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+--- !u!114 &193410796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193410789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &210029995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1713,7 @@ GameObject:
   - component: {fileID: 210029998}
   - component: {fileID: 210029997}
   - component: {fileID: 210029996}
+  - component: {fileID: 210030001}
   m_Layer: 7
   m_Name: wallEnd1
   m_TagString: World1
@@ -1634,7 +1738,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &210029997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1721,6 +1824,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &210030001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210029995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &226497051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1850,7 @@ GameObject:
   - component: {fileID: 226497053}
   - component: {fileID: 226497052}
   - component: {fileID: 226497056}
+  - component: {fileID: 226497057}
   m_Layer: 7
   m_Name: wallLPuzzle1-1 (1)
   m_TagString: World1
@@ -1844,7 +1961,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &226497057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226497051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &354498183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,7 +2011,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &354498185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1988,6 +2116,7 @@ GameObject:
   - component: {fileID: 367795672}
   - component: {fileID: 367795671}
   - component: {fileID: 367795670}
+  - component: {fileID: 367795675}
   m_Layer: 7
   m_Name: gateWallL1
   m_TagString: World1
@@ -2012,7 +2141,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &367795671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2099,6 +2227,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367795675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367795669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &397646440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2253,7 @@ GameObject:
   - component: {fileID: 397646443}
   - component: {fileID: 397646442}
   - component: {fileID: 397646441}
+  - component: {fileID: 397646446}
   m_Layer: 7
   m_Name: wallLPuzzle1-2 (1)
   m_TagString: World1
@@ -2136,7 +2278,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &397646442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2223,6 +2364,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397646446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397646440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &421487498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2390,7 @@ GameObject:
   - component: {fileID: 421487500}
   - component: {fileID: 421487499}
   - component: {fileID: 421487503}
+  - component: {fileID: 421487504}
   m_Layer: 7
   m_Name: wallStartR1
   m_TagString: World1
@@ -2346,7 +2501,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &421487504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421487498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &446111048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,6 +2527,7 @@ GameObject:
   - component: {fileID: 446111051}
   - component: {fileID: 446111050}
   - component: {fileID: 446111049}
+  - component: {fileID: 446111054}
   m_Layer: 7
   m_Name: gateWallL2
   m_TagString: World1
@@ -2384,7 +2552,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &446111050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2471,6 +2638,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446111054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446111048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &457928653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,6 +2664,7 @@ GameObject:
   - component: {fileID: 457928655}
   - component: {fileID: 457928654}
   - component: {fileID: 457928658}
+  - component: {fileID: 457928659}
   m_Layer: 7
   m_Name: wallEnd1
   m_TagString: World1
@@ -2594,7 +2775,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &457928659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457928653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &470263948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,6 +2801,7 @@ GameObject:
   - component: {fileID: 470263951}
   - component: {fileID: 470263950}
   - component: {fileID: 470263949}
+  - component: {fileID: 470263954}
   m_Layer: 11
   m_Name: floorStart2
   m_TagString: World1
@@ -2632,7 +2826,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &470263950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2719,6 +2912,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470263954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470263948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &514888486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2938,7 @@ GameObject:
   - component: {fileID: 514888489}
   - component: {fileID: 514888488}
   - component: {fileID: 514888487}
+  - component: {fileID: 514888492}
   m_Layer: 7
   m_Name: floorPuzzle1-1 (1)
   m_TagString: World1
@@ -2756,7 +2963,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &514888488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2843,6 +3049,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514888492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514888486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &536465158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +3075,7 @@ GameObject:
   - component: {fileID: 536465160}
   - component: {fileID: 536465159}
   - component: {fileID: 536465163}
+  - component: {fileID: 536465164}
   m_Layer: 7
   m_Name: floorStart1
   m_TagString: World1
@@ -2966,7 +3186,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
+--- !u!114 &536465164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536465158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &570332356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3330,7 @@ GameObject:
   - component: {fileID: 589443082}
   - component: {fileID: 589443081}
   - component: {fileID: 589443080}
+  - component: {fileID: 589443083}
   m_Layer: 12
   m_Name: gateholeshitbox3
   m_TagString: World2
@@ -3191,6 +3424,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589443078}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &589443083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589443078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &600711870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3450,7 @@ GameObject:
   - component: {fileID: 600711872}
   - component: {fileID: 600711871}
   - component: {fileID: 600711875}
+  - component: {fileID: 600711876}
   m_Layer: 7
   m_Name: wallRPuzzle1-1 (3)
   m_TagString: World1
@@ -3314,7 +3561,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &600711876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600711870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &659020465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3587,7 @@ GameObject:
   - component: {fileID: 659020467}
   - component: {fileID: 659020466}
   - component: {fileID: 659020470}
+  - component: {fileID: 659020471}
   m_Layer: 11
   m_Name: gateBar1
   m_TagString: World1
@@ -3438,7 +3698,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &659020471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659020465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &661289514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +3724,7 @@ GameObject:
   - component: {fileID: 661289517}
   - component: {fileID: 661289516}
   - component: {fileID: 661289515}
+  - component: {fileID: 661289520}
   m_Layer: 11
   m_Name: wallStartR2
   m_TagString: World1
@@ -3476,7 +3749,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &661289516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3563,6 +3835,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &661289520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661289514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &661938866
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3861,7 @@ GameObject:
   - component: {fileID: 661938868}
   - component: {fileID: 661938867}
   - component: {fileID: 661938871}
+  - component: {fileID: 661938872}
   m_Layer: 11
   m_Name: gateBar2
   m_TagString: World1
@@ -3686,7 +3972,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &661938872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661938866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &663363228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,6 +3998,7 @@ GameObject:
   - component: {fileID: 663363231}
   - component: {fileID: 663363230}
   - component: {fileID: 663363229}
+  - component: {fileID: 663363234}
   m_Layer: 7
   m_Name: wallRPuzzle1-2 (1)
   m_TagString: World1
@@ -3724,7 +4023,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &663363230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3811,6 +4109,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &663363234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663363228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &688790441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,6 +4409,7 @@ GameObject:
   - component: {fileID: 749307607}
   - component: {fileID: 749307606}
   - component: {fileID: 749307605}
+  - component: {fileID: 749307610}
   m_Layer: 11
   m_Name: wallStartB2
   m_TagString: World1
@@ -4122,7 +4434,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &749307606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4209,6 +4520,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &749307610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749307604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &760271009
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,6 +4665,7 @@ GameObject:
   - component: {fileID: 810254462}
   - component: {fileID: 810254461}
   - component: {fileID: 810254460}
+  - component: {fileID: 810254465}
   m_Layer: 7
   m_Name: wallRPuzzle1-2
   m_TagString: World1
@@ -4365,7 +4690,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &810254461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4452,6 +4776,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &810254465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810254459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &833681555
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4802,7 @@ GameObject:
   - component: {fileID: 833681558}
   - component: {fileID: 833681557}
   - component: {fileID: 833681556}
+  - component: {fileID: 833681561}
   m_Layer: 7
   m_Name: floorPuzzle1-1
   m_TagString: World1
@@ -4489,7 +4827,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &833681557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4576,6 +4913,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833681561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833681555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &880965948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,6 +4939,7 @@ GameObject:
   - component: {fileID: 880965951}
   - component: {fileID: 880965950}
   - component: {fileID: 880965949}
+  - component: {fileID: 880965954}
   m_Layer: 7
   m_Name: gateWallR2
   m_TagString: World1
@@ -4613,7 +4964,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &880965950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4700,6 +5050,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880965954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880965948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &950555669
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +5076,7 @@ GameObject:
   - component: {fileID: 950555672}
   - component: {fileID: 950555671}
   - component: {fileID: 950555670}
+  - component: {fileID: 950555675}
   m_Layer: 7
   m_Name: floorPuzzle1-2 (1)
   m_TagString: World1
@@ -4737,7 +5101,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &950555671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4824,6 +5187,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950555675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950555669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1093958143
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,6 +5213,7 @@ GameObject:
   - component: {fileID: 1093958145}
   - component: {fileID: 1093958144}
   - component: {fileID: 1093958148}
+  - component: {fileID: 1093958149}
   m_Layer: 7
   m_Name: wallRPuzzle1-1 (1)
   m_TagString: World1
@@ -4947,7 +5324,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1093958149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093958143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1098021741
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,6 +5350,7 @@ GameObject:
   - component: {fileID: 1098021743}
   - component: {fileID: 1098021742}
   - component: {fileID: 1098021746}
+  - component: {fileID: 1098021747}
   m_Layer: 11
   m_Name: gateTop1
   m_TagString: World1
@@ -5071,7 +5461,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1098021747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098021741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1137460133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,6 +5487,7 @@ GameObject:
   - component: {fileID: 1137460136}
   - component: {fileID: 1137460135}
   - component: {fileID: 1137460134}
+  - component: {fileID: 1137460139}
   m_Layer: 7
   m_Name: gateWallR1 (1)
   m_TagString: World1
@@ -5109,7 +5512,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &1137460135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5196,6 +5598,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1137460139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137460133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1157596303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5921,7 @@ GameObject:
   - component: {fileID: 1193815378}
   - component: {fileID: 1193815377}
   - component: {fileID: 1193815376}
+  - component: {fileID: 1193815381}
   m_Layer: 7
   m_Name: gateWallL2 (1)
   m_TagString: World1
@@ -5530,7 +5946,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &1193815377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5617,6 +6032,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1193815381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193815375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1203898593
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,6 +6058,7 @@ GameObject:
   - component: {fileID: 1203898595}
   - component: {fileID: 1203898594}
   - component: {fileID: 1203898598}
+  - component: {fileID: 1203898599}
   m_Layer: 7
   m_Name: wallLPuzzle1-1
   m_TagString: World1
@@ -5740,7 +6169,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1203898599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203898593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1229749658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5754,6 +6195,7 @@ GameObject:
   - component: {fileID: 1229749661}
   - component: {fileID: 1229749660}
   - component: {fileID: 1229749659}
+  - component: {fileID: 1229749664}
   m_Layer: 7
   m_Name: wallEndPuzzle1-2
   m_TagString: World1
@@ -5778,7 +6220,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &1229749660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5865,6 +6306,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1229749664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229749658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1256184683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,6 +6332,7 @@ GameObject:
   - component: {fileID: 1256184686}
   - component: {fileID: 1256184685}
   - component: {fileID: 1256184684}
+  - component: {fileID: 1256184689}
   m_Layer: 7
   m_Name: wallLPuzzle1-2
   m_TagString: World1
@@ -5902,7 +6357,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &1256184685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5989,6 +6443,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256184689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256184683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1287335358
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,6 +6469,7 @@ GameObject:
   - component: {fileID: 1287335361}
   - component: {fileID: 1287335360}
   - component: {fileID: 1287335359}
+  - component: {fileID: 1287335364}
   m_Layer: 7
   m_Name: wallLPuzzle1-2 (2)
   m_TagString: World1
@@ -6026,7 +6494,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &1287335360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6113,6 +6580,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287335364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287335358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1336274916
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,6 +6856,7 @@ GameObject:
   - component: {fileID: 1389554702}
   - component: {fileID: 1389554701}
   - component: {fileID: 1389554705}
+  - component: {fileID: 1389554706}
   m_Layer: 7
   m_Name: wallRPuzzle1-1
   m_TagString: World1
@@ -6486,7 +6967,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1389554706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389554700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1427684574
 GameObject:
   m_ObjectHideFlags: 0
@@ -6500,6 +6993,7 @@ GameObject:
   - component: {fileID: 1427684577}
   - component: {fileID: 1427684576}
   - component: {fileID: 1427684575}
+  - component: {fileID: 1427684580}
   m_Layer: 7
   m_Name: floorPuzzle1-2 (2)
   m_TagString: World1
@@ -6524,7 +7018,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &1427684576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6611,6 +7104,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427684580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427684574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1472632632
 GameObject:
   m_ObjectHideFlags: 0
@@ -6624,6 +7130,7 @@ GameObject:
   - component: {fileID: 1472632635}
   - component: {fileID: 1472632634}
   - component: {fileID: 1472632633}
+  - component: {fileID: 1472632638}
   m_Layer: 7
   m_Name: gateWallL1 (1)
   m_TagString: World1
@@ -6648,7 +7155,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &1472632634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6735,6 +7241,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472632638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472632632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1488731827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6748,6 +7267,7 @@ GameObject:
   - component: {fileID: 1488731830}
   - component: {fileID: 1488731829}
   - component: {fileID: 1488731828}
+  - component: {fileID: 1488731833}
   m_Layer: 11
   m_Name: wallStartL2
   m_TagString: World1
@@ -6772,7 +7292,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &1488731829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6859,6 +7378,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488731833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488731827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1511606942
 GameObject:
   m_ObjectHideFlags: 0
@@ -7116,6 +7648,7 @@ GameObject:
   - component: {fileID: 1606800343}
   - component: {fileID: 1606800342}
   - component: {fileID: 1606800341}
+  - component: {fileID: 1606800346}
   m_Layer: 7
   m_Name: gateWallR2 (1)
   m_TagString: World1
@@ -7140,7 +7673,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
 --- !u!65 &1606800342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7227,6 +7759,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606800346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606800340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1643856304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7240,6 +7785,7 @@ GameObject:
   - component: {fileID: 1643856306}
   - component: {fileID: 1643856305}
   - component: {fileID: 1643856309}
+  - component: {fileID: 1643856310}
   m_Layer: 7
   m_Name: wallStartL1
   m_TagString: World1
@@ -7350,7 +7896,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1643856310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643856304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1670705804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,22 +8079,22 @@ PrefabInstance:
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000074505513
+      value: 0.000000029802337
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000025611369
+      value: -0.0000000019208528
       objectReference: {fileID: 0}
     - target: {fileID: 2224323262105845678, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.7648636e-10
+      value: 2.2555469e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04019565
+      value: 0.01146403
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7546,27 +8104,27 @@ PrefabInstance:
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.349915
+      value: 9.349991
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0021458203
+      value: -0.0006119989
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00012579096
+      value: -0.000035876226
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9982839
+      value: 0.998286
       objectReference: {fileID: 0}
     - target: {fileID: 4703252508031112244, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.058520786
+      value: -0.05852091
       objectReference: {fileID: 0}
     - target: {fileID: 5352466653363042221, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7601,17 +8159,17 @@ PrefabInstance:
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00000001117587
+      value: 0.00000002980233
       objectReference: {fileID: 0}
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000032596286
+      value: -0.0000000017462298
       objectReference: {fileID: 0}
     - target: {fileID: 5722803051529476085, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.6379783e-10
+      value: 2.1100277e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5996574536834382703, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7626,12 +8184,12 @@ PrefabInstance:
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.86
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.02
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 6662237568019888740, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
@@ -7721,17 +8279,17 @@ PrefabInstance:
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00000001117587
+      value: 0.00000002980233
       objectReference: {fileID: 0}
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000032596286
+      value: -0.0000000017462298
       objectReference: {fileID: 0}
     - target: {fileID: 9105794085591896118, guid: bd7ba85929ea47745a6c296924f5ce74,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.6379783e-10
+      value: 2.1100277e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7870,6 +8428,7 @@ GameObject:
   - component: {fileID: 1717727681}
   - component: {fileID: 1717727680}
   - component: {fileID: 1717727679}
+  - component: {fileID: 1717727684}
   m_Layer: 7
   m_Name: floorPuzzle1-2
   m_TagString: World1
@@ -7894,7 +8453,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: c10d1ea420336934ea2f36b2b5098c28, type: 2}
-  gotDisolved: 0
 --- !u!65 &1717727680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7981,6 +8539,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1717727684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717727678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1744542387
 GameObject:
   m_ObjectHideFlags: 0
@@ -8128,6 +8699,7 @@ GameObject:
   - component: {fileID: 1745147696}
   - component: {fileID: 1745147695}
   - component: {fileID: 1745147699}
+  - component: {fileID: 1745147700}
   m_Layer: 11
   m_Name: gateTop2
   m_TagString: World1
@@ -8238,7 +8810,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1745147700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745147694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1784534232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8328,6 +8912,7 @@ GameObject:
   - component: {fileID: 1818319332}
   - component: {fileID: 1818319331}
   - component: {fileID: 1818319335}
+  - component: {fileID: 1818319336}
   m_Layer: 11
   m_Name: gateBar5
   m_TagString: World1
@@ -8438,7 +9023,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1818319336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818319330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1841390393
 GameObject:
   m_ObjectHideFlags: 0
@@ -8452,6 +9049,7 @@ GameObject:
   - component: {fileID: 1841390395}
   - component: {fileID: 1841390394}
   - component: {fileID: 1841390398}
+  - component: {fileID: 1841390399}
   m_Layer: 7
   m_Name: wallEndPuzzle1-1
   m_TagString: World1
@@ -8562,7 +9160,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1841390399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841390393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1965938797
 GameObject:
   m_ObjectHideFlags: 0
@@ -8710,6 +9320,7 @@ GameObject:
   - component: {fileID: 1969919918}
   - component: {fileID: 1969919917}
   - component: {fileID: 1969919921}
+  - component: {fileID: 1969919922}
   m_Layer: 11
   m_Name: gateBar4
   m_TagString: World1
@@ -8820,7 +9431,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1969919922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969919916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1980508209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8834,6 +9457,7 @@ GameObject:
   - component: {fileID: 1980508212}
   - component: {fileID: 1980508211}
   - component: {fileID: 1980508210}
+  - component: {fileID: 1980508215}
   m_Layer: 7
   m_Name: wallRPuzzle1-2 (2)
   m_TagString: World1
@@ -8858,7 +9482,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &1980508211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8945,6 +9568,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980508215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980508209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &1982600788
 GameObject:
   m_ObjectHideFlags: 0
@@ -8958,6 +9594,7 @@ GameObject:
   - component: {fileID: 1982600790}
   - component: {fileID: 1982600789}
   - component: {fileID: 1982600793}
+  - component: {fileID: 1982600794}
   m_Layer: 7
   m_Name: wallRPuzzle1-1 (2)
   m_TagString: World1
@@ -9068,7 +9705,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &1982600794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982600788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &2066854451
 GameObject:
   m_ObjectHideFlags: 0
@@ -9082,6 +9731,7 @@ GameObject:
   - component: {fileID: 2066854454}
   - component: {fileID: 2066854453}
   - component: {fileID: 2066854452}
+  - component: {fileID: 2066854457}
   m_Layer: 7
   m_Name: wallLPuzzle1-2 (3)
   m_TagString: World1
@@ -9106,7 +9756,6 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 2100000, guid: 66a6784d1aafce24e9a12deaae2a968c, type: 2}
-  gotDisolved: 0
 --- !u!65 &2066854453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9193,6 +9842,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2066854457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066854451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &2088916870
 GameObject:
   m_ObjectHideFlags: 0
@@ -9206,6 +9868,7 @@ GameObject:
   - component: {fileID: 2088916872}
   - component: {fileID: 2088916871}
   - component: {fileID: 2088916875}
+  - component: {fileID: 2088916876}
   m_Layer: 7
   m_Name: wallStartB1
   m_TagString: World1
@@ -9316,7 +9979,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &2088916876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088916870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &2102900983
 GameObject:
   m_ObjectHideFlags: 0
@@ -9405,6 +10080,7 @@ GameObject:
   - component: {fileID: 2104133295}
   - component: {fileID: 2104133294}
   - component: {fileID: 2104133298}
+  - component: {fileID: 2104133299}
   m_Layer: 11
   m_Name: gateBar3
   m_TagString: World1
@@ -9515,7 +10191,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &2104133299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104133293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &2128980461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9529,6 +10217,7 @@ GameObject:
   - component: {fileID: 2128980463}
   - component: {fileID: 2128980462}
   - component: {fileID: 2128980466}
+  - component: {fileID: 2128980467}
   m_Layer: 7
   m_Name: wallLPuzzle1-1 (3)
   m_TagString: World1
@@ -9639,7 +10328,19 @@ MonoBehaviour:
   value3: 0
   Aoe: []
   disolvematerial: {fileID: 0}
-  gotDisolved: 0
+--- !u!114 &2128980467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128980461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1001 &1680423973919352217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9656,37 +10357,37 @@ PrefabInstance:
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06516605
+      value: 0.11682573
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.976
+      value: 15.816
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 91.36991
+      value: 81.44999
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0021458236
+      value: -0.00061199715
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00012579115
+      value: -0.00003587614
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9982839
+      value: 0.998286
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.058520798
+      value: -0.05852094
       objectReference: {fileID: 0}
     - target: {fileID: 3812756091384149471, guid: a436fdd0d63a3da4d9f0abac82aae3d3,
         type: 3}
