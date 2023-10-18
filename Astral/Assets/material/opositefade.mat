@@ -60,5 +60,5 @@ Material:
     - _ObjectPosition: {r: -2.8505354, g: 2.7196174, b: 24.639542, a: 0}
     - _ObjectPosition2: {r: 4.263811, g: 0.09771204, b: 7.220128, a: 0}
     - _ObjectPosition3: {r: -6.8881965, g: 2.6040595, b: 20.196892, a: 0}
-    - _base_colour: {r: 0, g: 0.121106625, b: 1, a: 0}
+    - _base_colour: {r: 0, g: 0.9716981, b: 0.32226533, a: 1}
   m_BuildTextureStacks: []
