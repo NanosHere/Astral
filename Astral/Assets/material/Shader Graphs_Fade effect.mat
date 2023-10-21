@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -65,5 +69,5 @@ Material:
     - _ObjectPosition2: {r: 4.263811, g: 0.09771204, b: 7.220128, a: 0}
     - _ObjectPosition3: {r: -6.8881965, g: 2.6040595, b: 20.196892, a: 0}
     - _Object_Position: {r: 0, g: 0, b: 0, a: 0}
-    - _base_colour: {r: 0.0045389733, g: 0.20217381, b: 0.3207547, a: 0}
+    - _base_colour: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0}
   m_BuildTextureStacks: []

@@ -341,7 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 14007
+    m_Bits: 14263
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -558,7 +558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074656864147795865}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000011175871, y: 0.00025466122, z: -0.000029960152, w: 1}
+  m_LocalRotation: {x: 0.000000007450652, y: 0.003812717, z: -0.00044855502, w: 0.99999267}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -691,7 +691,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.92975
+    Value: -134.48982
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -1124,7 +1124,7 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 6272
+    m_Bits: 6528
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   groundpos: {fileID: 7066482862210156864}
   mask:
     serializedVersion: 2
-    m_Bits: 6272
+    m_Bits: 6528
   sphereRadisus: 0.09
 --- !u!114 &2724141227492695085
 MonoBehaviour:
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   freeCam: {fileID: 6553338690653559496}
   contactlayers:
     serializedVersion: 2
-    m_Bits: 6272
+    m_Bits: 6528
   moving: {fileID: 425097218036768760}
   debugtransform: {fileID: 1872776679189424113}
   fireTransform: {fileID: 3546593221160455132}
@@ -1225,8 +1225,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3424211406897858193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000011175871, y: 0.00025466122, z: -0.000029960152, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.028950348, y: -0.50012755, z: -3.7375658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1529,8 +1529,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6553338690653559496}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000020870353, y: 0.9982861, z: -0.058520928, w: -0.0003560194}
-  m_LocalPosition: {x: 0.011464026, y: 2.1160002, z: 9.349994}
+  m_LocalRotation: {x: -0.000035876114, y: 0.998286, z: -0.058520902, w: -0.0006119971}
+  m_LocalPosition: {x: 0.083252534, y: 2.1160002, z: 9.34963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1603,7 +1603,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.92975
+    Value: -134.48982
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 14007
+    m_Bits: 14263
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -1945,7 +1945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983202275455916042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000011175871, y: 0.00025466122, z: -0.000029960152, w: 1}
+  m_LocalRotation: {x: 0.000000007450652, y: 0.003812717, z: -0.00044855502, w: 0.99999267}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2078,7 +2078,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.92975
+    Value: -134.48982
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -2346,7 +2346,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.92975
+    Value: -134.48982
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
