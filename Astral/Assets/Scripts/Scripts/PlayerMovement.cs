@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody m_Rigidbody;
-    public float m_Speed = 5f;
+    Vector3 input;
+    public float curSpeed = 0f;
+    public float maxSpeed = 10f;
     public Transform orientation;
     public Transform playerChar;
 
@@ -16,7 +18,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("jump")]
 
     public float jumpSpeed =10;
-    private bool isGrounded;
+    public bool isDoubleJump;
+    public bool isGrounded;
+    public bool triggerJump;
     public Transform groundpos;
     public LayerMask mask;
     public float sphereRadisus;
@@ -35,12 +39,46 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        // check to see if player is on the ground
+        if (checkGround() == true)
+        {
+            isGrounded = true;
+            isDoubleJump = false;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+        //check to see if user press the space bar
+        if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
+        {
+            StartCoroutine(Jumping());
+            triggerJump = true;
+        }
+    }
+
+
+
     void FixedUpdate()
     {
          
         
         //Store user input as a movement vector
-        Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        
+
+        input = Vector3.ClampMagnitude(input, 1);
+        if (input != Vector3.zero)
+        {
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, Time.deltaTime*2);
+        }
+        else
+        {
+            curSpeed = Mathf.Lerp(curSpeed, 0, Time.deltaTime);
+
+        }
 
 
         //get camera forward and right directions
@@ -55,21 +93,21 @@ public class PlayerMovement : MonoBehaviour
         right = right.normalized;
 
         // get input based on the direction of the camra
-        Vector3 forwardRelativeV = m_Input.z * forward;
-        Vector3 forwardRelativeH = m_Input.x * right;
+        Vector3 forwardRelativeV = input.z * forward;
+        Vector3 forwardRelativeH = input.x * right;
 
         Vector3 addInput = forwardRelativeH + forwardRelativeV;
 
         //Apply the movement vector to the current position, which is
         //multiplied by deltaTime and speed for a smooth MovePosition
-        m_Rigidbody.MovePosition(transform.position + addInput * Time.deltaTime * m_Speed);
+        m_Rigidbody.MovePosition(transform.position + addInput * Time.deltaTime * curSpeed);
 
         //using inputs find the players rotation direction.
         Vector3 viewdir = transform.position - new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
         orientation.forward = viewdir;
         //orientation.forward = viewdir.normalized;
 
-         Vector3 inputDir = orientation.forward * m_Input.z + orientation.right * m_Input.x;
+         Vector3 inputDir = orientation.forward * input.z + orientation.right * input.x;
 
 
         if(shootie.aimMode == false)
@@ -87,29 +125,19 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        Debug.Log(checkGround());
-        if(checkGround()== true)
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-        //jump script + check ground
-        if (Input.GetKey(KeyCode.Space) && isGrounded == true)
-        {
-            if(groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable == true) { 
-                m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
-                m_Rigidbody.AddForce(new Vector3(0,jumpSpeed,0), ForceMode.Impulse);
-            }
-        }
         
+        
+        
+       
+
+
 
 
 
 
     }
+
+
     
     // check if player is on ground
     bool checkGround()
@@ -119,4 +147,35 @@ public class PlayerMovement : MonoBehaviour
 
         return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
     }
-}
+
+    IEnumerator Jumping()
+    {
+        
+            if(isGrounded == true)
+            {
+                if (groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable == true)
+                {
+                    m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
+                    m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                }
+            }
+            else
+            {
+                if (isDoubleJump == false)
+                {
+                    Debug.Log("doublejump");
+                    isDoubleJump = true;
+                    m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
+                    m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                }
+            }
+
+        
+        triggerJump = false;
+
+
+        yield return new WaitForSeconds(.1f);
+        triggerJump = false;
+    }
+
+    }
