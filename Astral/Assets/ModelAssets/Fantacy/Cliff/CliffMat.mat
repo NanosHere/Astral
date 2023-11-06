@@ -60,7 +60,8 @@ Material:
     - _ObjectPosition: {r: 999, g: 999, b: 999, a: 0}
     - _ObjectPosition2: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectPosition3: {r: 0, g: 0, b: 0, a: 0}
-    - _base_colour: {r: 1, g: 1, b: 1, a: 0}
+    - _UV: {r: 0, g: 0, b: 0, a: 0}
+    - _base_colour: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 0}
     - _emmision: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &536743222735174990

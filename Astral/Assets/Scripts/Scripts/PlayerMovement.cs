@@ -55,8 +55,9 @@ public class PlayerMovement : MonoBehaviour
         //check to see if user press the space bar
         if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
         {
-            StartCoroutine(Jumping());
             triggerJump = true;
+            StartCoroutine(Jumping());
+            
         }
     }
 
@@ -142,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
     // check if player is on ground
     bool checkGround()
     {
-        
+        Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
 
 
         return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
@@ -150,11 +151,13 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Jumping()
     {
-        
+        triggerJump = true;
             if(isGrounded == true)
             {
+                Debug.Log(groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable);
                 if (groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable == true)
                 {
+                    
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
                 }
@@ -171,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
         
-        triggerJump = false;
+        
 
 
         yield return new WaitForSeconds(.1f);
