@@ -3345,6 +3345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7122893861249286977}
   - component: {fileID: 4397274065025916410}
+  - component: {fileID: 2733189785212244020}
   m_Layer: 7
   m_Name: AstralBuilding2_R
   m_TagString: World1
@@ -3424,6 +3425,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.96, y: 19.81, z: 33.5}
   m_Center: {x: 0, y: -2.53, z: -3.55}
+--- !u!65 &2733189785212244020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7607224732951468539}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 40960
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.9, y: 7.81, z: 11.01}
+  m_Center: {x: 0, y: 10.97, z: 7.56}
 --- !u!1 &7694252626509898379
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,12 +4318,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.78
+      value: -10.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.33
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
@@ -4412,7 +4434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
+  isInteractable: 1
 --- !u!1001 &3483491031041095103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,12 +4451,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 494.2765
+      value: 512.76245
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 494.2765
+      value: 606.5761
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
@@ -4444,12 +4466,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.3533
+      value: -7.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.09
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
@@ -4560,7 +4582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
+  isInteractable: 1
 --- !u!1001 &4731874154909383939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4592,7 +4614,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.78
+      value: -10.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
@@ -4708,7 +4730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
+  isInteractable: 1
 --- !u!1001 &5051654892169231467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4740,7 +4762,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.78
+      value: -10.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b71c7b57ff48dc4f80e5aca21481112,
         type: 3}
@@ -4856,4 +4878,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d8e534c7f238b43a1338f47f60b1a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
+  isInteractable: 1
