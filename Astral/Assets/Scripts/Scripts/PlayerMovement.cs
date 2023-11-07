@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public float sphereRadisus;
     public RaycastHit groundcheckHit;
     private Transform extraOrientation;
+    public ParticleSystem particles;
 
     
     
@@ -170,6 +171,7 @@ public class PlayerMovement : MonoBehaviour
                     isDoubleJump = true;
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                    particles.Play();
                 }
             }
 
