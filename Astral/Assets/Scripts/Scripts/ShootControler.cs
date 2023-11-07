@@ -179,13 +179,17 @@ public class ShootControler : MonoBehaviour
     // when q is pressed destroy object and let player shoot one
     IEnumerator returnLamp()
     {
+      
+        
+        yield return new WaitForSeconds(.5f);
+
         GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
         Debug.Log(lamps.Length);
         switch (lamps.Length)
         {
             case 0:
-                
-                    break;
+
+                break;
             case 1:
                 lamps[0].GetComponent<LampProjectile>().destroyThis();
                 lampsOut = 0;
@@ -201,8 +205,7 @@ public class ShootControler : MonoBehaviour
 
 
         }
-        
-        yield return new WaitForSeconds(.5f);
+
     }
 
 
