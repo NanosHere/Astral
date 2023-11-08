@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 6528057174263579000}
   - component: {fileID: 6174570104417387959}
   - component: {fileID: 3026587822431665583}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Particle System1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5502,7 +5502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074656864147795865}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000018626501, y: -0.0010513281, z: 0.0001236857, w: 0.9999995}
+  m_LocalRotation: {x: -0.08632083, y: 0.0093731675, z: -0.0002876268, w: 0.99622333}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5615,7 +5615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.40129462, z: -7.189924}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -5635,7 +5635,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.89117
+    Value: -133.81657
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -6069,7 +6069,7 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 6528
+    m_Bits: 4480
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6175,8 +6175,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3424211406897858193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000018626501, y: -0.001051326, z: 0.00012368544, w: 0.9999995}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.023042608, y: 2.1609159, z: 0.9827007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6479,8 +6479,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6553338690653559496}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00011751913, y: 0.9982842, z: -0.05852082, w: -0.0020047138}
-  m_LocalPosition: {x: 0.017757088, y: 2.796, z: 9.349982}
+  m_LocalRotation: {x: -0.000055570265, y: 0.9982858, z: -0.058520902, w: -0.0009479521}
+  m_LocalPosition: {x: 0.14849436, y: 1.2947055, z: 7.18839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6529,7 +6529,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_YAxis:
-    Value: 0.5
+    Value: 0.2808272
     m_SpeedMode: 0
     m_MaxSpeed: 2
     m_AccelTime: 0.2
@@ -6553,7 +6553,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.89117
+    Value: -133.81657
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -6895,7 +6895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983202275455916042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000018626487, y: -0.0010513302, z: 0.00012368594, w: 0.9999995}
+  m_LocalRotation: {x: -0.08632083, y: 0.0093731675, z: -0.0002876268, w: 0.99622333}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7008,7 +7008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.40129462, z: -7.189924}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -7028,7 +7028,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.89117
+    Value: -133.81657
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -7276,7 +7276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.40129462, z: -7.189924}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -7296,7 +7296,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -134.89117
+    Value: -133.81657
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
