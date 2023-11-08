@@ -31,9 +31,15 @@ public class Effecthitbox : MonoBehaviour
                 other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
             }
         }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
+        {
 
-           
-        Debug.Log(LayerMask.NameToLayer("Players"));
+            other.gameObject.GetComponent<Rigidbody>().mass = 1;
+            Debug.Log("wowza");
+        }
+
+
+        
 
         //other.GetComponent<BoxCollider>();
 
@@ -63,7 +69,13 @@ public class Effecthitbox : MonoBehaviour
                 other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
             }
         }
-        Debug.Log("exit");
+        else if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
+        {
+
+            other.gameObject.GetComponent<Rigidbody>().mass = 1000;
+            Debug.Log("exit");
+        }
+        
             
         //other.GetComponent<BoxCollider>().enabled = true;
         //Physics.IgnoreLayerCollision(6, 1, false);

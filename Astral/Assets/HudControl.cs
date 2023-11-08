@@ -11,7 +11,9 @@ public class HudControl : MonoBehaviour
     public GameObject ShootCanvas;
     public GameObject hudcanvas;
     public GameObject pauseCanvas;
+    public GameObject contols;
     public  TextMeshProUGUI LampText;
+    public bool controlsOpen;
     public bool MenuOpen;
 
 
@@ -21,6 +23,7 @@ public class HudControl : MonoBehaviour
         ShootCanvas.SetActive(true);
         hudcanvas.SetActive(true);
         pauseCanvas.SetActive(false);
+        contols.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -51,10 +54,26 @@ public class HudControl : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void ToControls()
+    {
+        if(controlsOpen == true)
+        {
+            contols.SetActive(false);
+            controlsOpen = false;
+        }
+        else
+        {
+            contols.SetActive(true);
+            controlsOpen = true;
+        }
+    }
+
     public void EffectMenu()
     {
         if (MenuOpen == true)
         {
+            controlsOpen = false;
+            contols.SetActive(false);
             ShootCanvas.SetActive(true);
             hudcanvas.SetActive(true);
             pauseCanvas.SetActive(false);
