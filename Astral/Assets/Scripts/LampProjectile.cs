@@ -46,7 +46,7 @@ public class LampProjectile : MonoBehaviour
     public void destroyThis()
     {
         aoe.transform.localScale = new Vector3(.1f, .1f, .1f);
-        Destroy(this.gameObject, 0f);
+        Destroy(this.gameObject, .5f);
     }
     
 }
