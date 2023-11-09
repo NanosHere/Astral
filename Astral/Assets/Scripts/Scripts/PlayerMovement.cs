@@ -161,6 +161,7 @@ public class PlayerMovement : MonoBehaviour
                     
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                    particles.Play();
                 }
             }
             else

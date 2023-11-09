@@ -10,10 +10,10 @@ public class Effecthitbox : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-       
-            
+        
+
         //Physics.IgnoreLayerCollision(6, 1, true);
-        if(other.gameObject.layer == LayerMask.NameToLayer("World1"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
            
             if(other.gameObject.GetComponent<InteractableObJect>() != null) { 
@@ -22,22 +22,31 @@ public class Effecthitbox : MonoBehaviour
             }
 
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
+         if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
         {
             if (other.gameObject.GetComponent<InteractableObJect>() != null)
             {
                 
                 other.gameObject.GetComponent<InteractableObJect>().isInteractable = true;
-                other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
+                other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger", "Interactablelaunch");
+                Debug.Log("wowza");
             }
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
         {
 
             other.gameObject.GetComponent<Rigidbody>().mass = 1;
-            Debug.Log("wowza");
+            
         }
+        if (other.gameObject.layer == LayerMask.NameToLayer("World1Passthrough"))
+         {
 
+                
+                    
+            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
+                
+
+         }
 
         
 
@@ -57,10 +66,10 @@ public class Effecthitbox : MonoBehaviour
             {
                 other.gameObject.GetComponent<InteractableObJect>().isInteractable = true;
 
-                other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
+                other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger", "Interactablelaunch");
             }
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
         {
             if (other.gameObject.GetComponent<InteractableObJect>() != null)
             {
@@ -69,14 +78,23 @@ public class Effecthitbox : MonoBehaviour
                 other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
             }
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
         {
 
             other.gameObject.GetComponent<Rigidbody>().mass = 1000;
             Debug.Log("exit");
         }
-        
-            
+         if (other.gameObject.layer == LayerMask.NameToLayer("World1Passthrough"))
+        {
+
+
+
+            other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger");
+
+
+        }
+
+
         //other.GetComponent<BoxCollider>().enabled = true;
         //Physics.IgnoreLayerCollision(6, 1, false);
         //other.GetComponent<BoxCollider>().includeLayers = 11;

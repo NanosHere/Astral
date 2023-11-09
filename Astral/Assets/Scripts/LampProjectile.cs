@@ -50,3 +50,46 @@ public class LampProjectile : MonoBehaviour
     }
     
 }
+/*
+  public void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(aoe.transform.localScale);
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "World1" )
+        {
+            Debug.Log("hitbody");
+            
+            rigidbody.isKinematic = true;
+
+            aoe.gameObject.SetActive(true);
+
+            StartCoroutine(lampField(true));
+        }
+    }
+
+    public void destroyThis()
+    {
+        //aoe.transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(.1f, .1f, .1f), Time.deltaTime * 20);
+        StartCoroutine(lampField(false));
+        Destroy(this.gameObject, .5f);
+    }
+
+    IEnumerator lampField(bool grow)
+    {
+        if(grow == true)
+        {
+            size = Mathf.Lerp(size, 10, 50 * Time.deltaTime );
+            aoe.transform.localScale = Vector3.Lerp(new Vector3(.1f, .1f, .1f), new Vector3(39f, 39f, 39f), 50 * Time.deltaTime);
+           
+        }
+        else
+        {
+            size = Mathf.Lerp(size, 0, 50 * Time.deltaTime );
+            aoe.transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(.1f, .1f, .1f), 50 * Time.deltaTime );
+            
+        }
+
+        
+        yield return null;
+    }
+*/
