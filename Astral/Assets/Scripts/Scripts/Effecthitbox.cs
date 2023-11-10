@@ -10,8 +10,8 @@ public class Effecthitbox : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        
 
+        //Debug.Log(other);
         //Physics.IgnoreLayerCollision(6, 1, true);
         if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
@@ -22,14 +22,14 @@ public class Effecthitbox : MonoBehaviour
             }
 
         }
-         if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("World2"))
         {
             if (other.gameObject.GetComponent<InteractableObJect>() != null)
             {
                 
                 other.gameObject.GetComponent<InteractableObJect>().isInteractable = true;
                 other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Players", "Trigger", "Interactablelaunch");
-                Debug.Log("wowza");
+                //Debug.Log("wowza");
             }
         }
         if (other.gameObject.layer == LayerMask.NameToLayer("PushableW1"))
@@ -59,9 +59,10 @@ public class Effecthitbox : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
 
-
+        Debug.Log(other);
         if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
+            
             if (other.gameObject.GetComponent<InteractableObJect>() != null)
             {
                 other.gameObject.GetComponent<InteractableObJect>().isInteractable = true;
