@@ -47,7 +47,7 @@ public class DissolveController : MonoBehaviour
                 break;
 
             case 1:
-                value1 = 10;
+                value1 = Aoe[0].GetComponentInParent<LampProjectile>().size;
                 value2 = 0;
                 value3 = 0;
                 disolvematerial.SetFloat("_SimpleDisolvesize", value1);
@@ -56,8 +56,8 @@ public class DissolveController : MonoBehaviour
                 disolvematerial.SetVector("_ObjectPosition", Aoe[0].transform.position);
                 break;
             case 2:
-                value1 = 10;
-                value2 = 10;
+                value1 = Aoe[0].GetComponentInParent<LampProjectile>().size;
+                value2 = Aoe[1].GetComponentInParent<LampProjectile>().size;
                 value3 = 0;
                 disolvematerial.SetFloat("_SimpleDisolvesize", value1);
                 disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
@@ -66,9 +66,9 @@ public class DissolveController : MonoBehaviour
                 disolvematerial.SetVector("_ObjectPosition2", Aoe[1].transform.position);
                 break;
             case 3:
-                value1 = 10;
-                value2 = 10;
-                value3 = 10;
+                value1 = Aoe[0].GetComponentInParent<LampProjectile>().size;
+                value2 = Aoe[1].GetComponentInParent<LampProjectile>().size;
+                value3 = Aoe[2].GetComponentInParent<LampProjectile>().size;
                 disolvematerial.SetFloat("_SimpleDisolvesize", value1);
                 disolvematerial.SetFloat("_SimpleDisolvesize2", value2);
                 disolvematerial.SetFloat("_SimpleDisolvesize3", value3);
