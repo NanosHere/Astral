@@ -28,8 +28,10 @@ public class PlayerMovement : MonoBehaviour
     private Transform extraOrientation;
     public ParticleSystem particles;
 
-    
-    
+    [Header("PhysicsMat")]
+    public PhysicMaterial PMat;
+
+
 
     void Start()
     {
@@ -48,10 +50,14 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
             isDoubleJump = false;
+            PMat.dynamicFriction = 1;
+            PMat.staticFriction = 1;
         }
         else
         {
             isGrounded = false;
+            PMat.dynamicFriction = 0;
+            PMat.staticFriction = 0;
         }
         //check to see if user press the space bar
         if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
@@ -163,6 +169,11 @@ public class PlayerMovement : MonoBehaviour
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
                     particles.Play();
                 }
+                 else
+                  {
+                triggerJump = false;
+                yield return new WaitForSeconds(.1f);
+                 }
             }
             else
             {
