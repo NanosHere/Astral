@@ -5,8 +5,16 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    
+
 
     public GameObject collectVis;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("HIT!!");
+    }
+    /*
     private void OnTriggerEnter(Collider hit)
     {
         Debug.Log("HIT!!");
@@ -17,4 +25,5 @@ public class Pickup : MonoBehaviour
             Debug.Log("COLLECTED!!");
         }
     }
+    */
 }
