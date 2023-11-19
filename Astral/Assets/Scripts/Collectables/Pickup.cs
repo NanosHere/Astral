@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject collectVis;
+    private void OnTriggerEnter(Collider hit)
     {
-        
+        Debug.Log("HIT!!");
+        if (hit.gameObject.layer == LayerMask.NameToLayer("Players"))
+        {
+            collectVis.SetActive(true);
+            this.gameObject.SetActive(false);
+            Debug.Log("COLLECTED!!");
+        }
     }
 }
