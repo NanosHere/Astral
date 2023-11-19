@@ -44,7 +44,7 @@ public class ShootControler : MonoBehaviour
         }
 
         //start aim mode
-        if (Input.GetKey(KeyCode.Mouse1) && aimMode == false && resetAim == true)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && aimMode == false )
         {
 
 
@@ -55,7 +55,7 @@ public class ShootControler : MonoBehaviour
             freeCam.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 9;
         }
         //stop aim mode
-        else if(Input.GetKey(KeyCode.Mouse1) && aimMode == true && resetAim == true)
+        else if(Input.GetKeyUp(KeyCode.Mouse1) && aimMode == true )
         {
             aimMode = false;
             resetAim = false;
