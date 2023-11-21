@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         if (checkGround() == true)
         {
             isGrounded = true;
+            triggerJump = false;
             isDoubleJump = false;
             PMat.dynamicFriction = 1;
             PMat.staticFriction = 1;
@@ -131,18 +132,6 @@ public class PlayerMovement : MonoBehaviour
          }
 
 
-
-
-        
-        
-        
-       
-
-
-
-
-
-
     }
 
 
@@ -171,15 +160,15 @@ public class PlayerMovement : MonoBehaviour
                 }
                  else
                   {
-                triggerJump = false;
-                yield return new WaitForSeconds(.1f);
+                    triggerJump = false;
+                    yield return new WaitForSeconds(.1f);
                  }
             }
             else
             {
                 if (isDoubleJump == false)
                 {
-                    Debug.Log("doublejump");
+                   
                     isDoubleJump = true;
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);

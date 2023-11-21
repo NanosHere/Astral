@@ -13,11 +13,11 @@ public class InteractableObJect : MonoBehaviour
     {
         if (this.gameObject.tag == "World2")
         {
-            isInteractable = false;
+            //isInteractable = false;
         }
         if (this.gameObject.tag == "World1")
         {
-            isInteractable = true;
+            //isInteractable = true;
         }
         if (this.gameObject.tag == "impassible")
         {
