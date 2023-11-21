@@ -145,6 +145,12 @@ public class ShootControler : MonoBehaviour
 
     }
 
+
+    public void StartGameplay()
+    {
+        freeCam.GetComponent<Cinemachine.CinemachineFreeLook>().m_Transitions.m_InheritPosition = true;
+    }
+
     // create a lamp and launch it
     IEnumerator fireLamp()
     {
@@ -181,7 +187,7 @@ public class ShootControler : MonoBehaviour
     {
       
         
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.1f);
 
         GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
         Debug.Log(lamps.Length);
@@ -195,11 +201,11 @@ public class ShootControler : MonoBehaviour
                 lampsOut = 0;
                 break;
             case 2:
-                lamps[1].GetComponent<LampProjectile>().destroyThis();
+                lamps[0].GetComponent<LampProjectile>().destroyThis();
                 lampsOut = 1;
                 break;
             case 3:
-                lamps[2].GetComponent<LampProjectile>().destroyThis();
+                lamps[0].GetComponent<LampProjectile>().destroyThis();
                 lampsOut = 2;
                 break;
 
