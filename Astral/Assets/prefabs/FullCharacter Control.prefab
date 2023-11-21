@@ -256,7 +256,7 @@ MonoBehaviour:
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 3
+    m_BlendHint: 0
     m_InheritPosition: 1
     m_OnCameraLive:
       m_PersistentCalls:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 14263
+    m_Bits: 438
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -6232,7 +6232,7 @@ MonoBehaviour:
   playerChar: {fileID: 4743645515627978013}
   rotationSpeed: 10
   shootie: {fileID: 5917066073821415642}
-  jumpSpeed: 6.5
+  jumpSpeed: 6
   isDoubleJump: 0
   isGrounded: 0
   triggerJump: 0
@@ -6242,6 +6242,7 @@ MonoBehaviour:
     m_Bits: 6528
   sphereRadisus: 0.09
   particles: {fileID: 6174570104417387959}
+  PMat: {fileID: 0}
 --- !u!114 &2724141227492695085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6656,7 +6657,7 @@ MonoBehaviour:
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 3
+    m_BlendHint: 0
     m_InheritPosition: 1
     m_OnCameraLive:
       m_PersistentCalls:
@@ -6742,7 +6743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 16310
+    m_Bits: 10678
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
