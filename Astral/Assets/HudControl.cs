@@ -71,20 +71,6 @@ public class HudControl : MonoBehaviour
         }
     }
 
-    public void ToCollection()
-    {
-        if (collectionOpen == true)
-        {
-            collectionCanvas.SetActive(false);
-            collectionOpen = false;
-        }
-        else
-        {
-            collectionCanvas.SetActive(true);
-            collectionOpen = true;
-        }
-    }
-
     public void EffectMenu()
     {
         if (MenuOpen == true)
