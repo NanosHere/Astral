@@ -11,10 +11,12 @@ public class HudControl : MonoBehaviour
     public GameObject ShootCanvas;
     public GameObject hudcanvas;
     public GameObject pauseCanvas;
-    public GameObject contols;
+    public GameObject controls;
+    public GameObject collectionCanvas;
     public  TextMeshProUGUI LampText;
     public bool controlsOpen;
     public bool MenuOpen;
+    public bool collectionOpen;
 
 
     // Start is called before the first frame update
@@ -23,7 +25,8 @@ public class HudControl : MonoBehaviour
         ShootCanvas.SetActive(true);
         hudcanvas.SetActive(true);
         pauseCanvas.SetActive(false);
-        contols.SetActive(false);
+        collectionCanvas.SetActive(false);
+        controls.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -58,13 +61,27 @@ public class HudControl : MonoBehaviour
     {
         if(controlsOpen == true)
         {
-            contols.SetActive(false);
+            controls.SetActive(false);
             controlsOpen = false;
         }
         else
         {
-            contols.SetActive(true);
+            controls.SetActive(true);
             controlsOpen = true;
+        }
+    }
+
+    public void ToCollection()
+    {
+        if (collectionOpen == true)
+        {
+            collectionCanvas.SetActive(false);
+            collectionOpen = false;
+        }
+        else
+        {
+            collectionCanvas.SetActive(true);
+            collectionOpen = true;
         }
     }
 
@@ -73,7 +90,7 @@ public class HudControl : MonoBehaviour
         if (MenuOpen == true)
         {
             controlsOpen = false;
-            contols.SetActive(false);
+            controls.SetActive(false);
             ShootCanvas.SetActive(true);
             hudcanvas.SetActive(true);
             pauseCanvas.SetActive(false);
@@ -81,6 +98,8 @@ public class HudControl : MonoBehaviour
             MenuOpen = false;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            collectionCanvas.SetActive(false);
+            collectionOpen = false;
 
         }
         else
