@@ -5,7 +5,7 @@ using UnityEngine;
 public class BirdCutscenes : MonoBehaviour
 {
     public Animator animator;
-    int SceneNumber = -1;
+    public int SceneNumber;
 
     void Start()
     {
@@ -19,6 +19,14 @@ public class BirdCutscenes : MonoBehaviour
     {
         SceneNumber++;
         animator.SetInteger("Cutscene", SceneNumber);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Players"))
+        {
+            animator.SetInteger("Cutscene", SceneNumber);
+        }
     }
 
 }
