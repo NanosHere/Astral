@@ -9,7 +9,7 @@ public class LampProjectile : MonoBehaviour
     public Rigidbody rigidbody;
     Cinemachine.CinemachineImpulseSource source;
     public GameObject aoe;
-    float lerpDuration = 1;
+    float lerpDuration = .5f;
 
 
 
@@ -51,7 +51,7 @@ public class LampProjectile : MonoBehaviour
         //aoe.transform.localScale = new Vector3(.1f, .1f, .1f);
         StartCoroutine(lampField(false));
 
-        Destroy(this.gameObject, 1.5f);
+        Destroy(this.gameObject, .7f);
     }
 
 

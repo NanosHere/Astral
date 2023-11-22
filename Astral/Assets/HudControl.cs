@@ -73,7 +73,7 @@ public class HudControl : MonoBehaviour
 
     public void ToCollection()
     {
-        if (collectionOpen == true)
+        if(collectionOpen == true)
         {
             collectionCanvas.SetActive(false);
             collectionOpen = false;
@@ -84,7 +84,6 @@ public class HudControl : MonoBehaviour
             collectionOpen = true;
         }
     }
-
     public void EffectMenu()
     {
         if (MenuOpen == true)
