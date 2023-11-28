@@ -46,19 +46,31 @@ public class PlayerMovement : MonoBehaviour
     {
         input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         // check to see if player is on the ground
+        
         if (checkGround() == true)
         {
-            isGrounded = true;
-            triggerJump = false;
-            isDoubleJump = false;
-            PMat.dynamicFriction = 1;
-            PMat.staticFriction = 1;
+            if (groundcheckHit.transform.gameObject.GetComponent<InteractableObJect>().isInteractable == true)
+            {
+                isGrounded = true;
+                triggerJump = false;
+                //isDoubleJump = false;
+                PMat.dynamicFriction = 1;
+                PMat.staticFriction = 1;
+                maxSpeed = 10;
+                //Debug.Log(groundcheckHit.transform.gameObject);
+            
+           
+                isDoubleJump = false;
+            }
+
         }
         else
         {
             isGrounded = false;
             PMat.dynamicFriction = 0;
             PMat.staticFriction = 0;
+            maxSpeed = 7.5f;
+            
         }
         //check to see if user press the space bar
         if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
@@ -81,11 +93,11 @@ public class PlayerMovement : MonoBehaviour
         input = Vector3.ClampMagnitude(input, 1);
         if (input != Vector3.zero)
         {
-            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, Time.deltaTime*2);
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, Time.deltaTime*1f);
         }
         else
         {
-            curSpeed = Mathf.Lerp(curSpeed, 0, Time.deltaTime);
+            curSpeed = Mathf.Lerp(curSpeed, 0, Time.deltaTime*4);
 
         }
 
@@ -142,7 +154,12 @@ public class PlayerMovement : MonoBehaviour
         Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
 
 
+        
+
         return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
+
+       
+
     }
 
     IEnumerator Jumping()
@@ -150,7 +167,7 @@ public class PlayerMovement : MonoBehaviour
         triggerJump = true;
             if(isGrounded == true)
             {
-                Debug.Log(groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable);
+                //Debug.Log(groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable);
                 if (groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().isInteractable == true)
                 {
                     

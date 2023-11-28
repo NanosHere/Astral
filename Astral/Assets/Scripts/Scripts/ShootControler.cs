@@ -66,7 +66,7 @@ public class ShootControler : MonoBehaviour
 
         }
 
-        if (aimMode== true)
+        if (aimMode == true)
         {
 
 
@@ -162,7 +162,7 @@ public class ShootControler : MonoBehaviour
         
         
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         
 
 
@@ -171,7 +171,7 @@ public class ShootControler : MonoBehaviour
     }
     IEnumerator reseting()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         reset = true;
 
     }
@@ -187,10 +187,10 @@ public class ShootControler : MonoBehaviour
     {
       
         
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.001f);
 
         GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
-        Debug.Log(lamps.Length);
+        //Debug.Log(lamps.Length);
         switch (lamps.Length)
         {
             case 0:

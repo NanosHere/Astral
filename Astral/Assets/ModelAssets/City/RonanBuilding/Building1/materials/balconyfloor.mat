@@ -128,7 +128,9 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Metal: 0
     - _Metallic: 0
+    - _NormalValue: 0.54
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -137,6 +139,7 @@ Material:
     - _SimpleDisolvesize: 0
     - _SimpleDisolvesize2: 0
     - _SimpleDisolvesize3: 0
+    - _SimpleDisolvesize4: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -153,6 +156,8 @@ Material:
     - _ObjectPosition: {r: 999, g: 999, b: 999, a: 0}
     - _ObjectPosition2: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectPosition3: {r: 0, g: 0, b: 0, a: 0}
+    - _ObjectPosition4: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _base_colour: {r: 1, g: 1, b: 1, a: 0}
+    - _offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -39,8 +39,10 @@ public class Effecthitbox : MonoBehaviour
         {
             other.gameObject.GetComponent<InteractableObJect>().numberInteract(true);
             other.gameObject.GetComponent<Rigidbody>().mass = 1;
-            
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+
         }
+        
         if (other.gameObject.layer == LayerMask.NameToLayer("World1Passthrough"))
          {
 
@@ -62,7 +64,7 @@ public class Effecthitbox : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
 
-        Debug.Log(other);
+        //Debug.Log(other);
         if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
             
@@ -85,7 +87,7 @@ public class Effecthitbox : MonoBehaviour
                 if (other.gameObject.GetComponent<InteractableObJect>().numberInteract(false) == 0)
                 {
                     other.gameObject.GetComponent<InteractableObJect>().isInteractable = false;
-                    Debug.Log("World2");
+                    //Debug.Log("World2");
                     other.GetComponent<BoxCollider>().includeLayers = LayerMask.GetMask("Trigger");
                 }
             }
@@ -95,7 +97,8 @@ public class Effecthitbox : MonoBehaviour
             if (other.gameObject.GetComponent<InteractableObJect>().numberInteract(false) == 0)
             {
                 other.gameObject.GetComponent<Rigidbody>().mass = 1000;
-                Debug.Log("exit");
+                other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                //Debug.Log("exit");
             }
         }
          if (other.gameObject.layer == LayerMask.NameToLayer("World1Passthrough"))
