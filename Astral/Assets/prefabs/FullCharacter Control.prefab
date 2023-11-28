@@ -131,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 568103370039612408}
   serializedVersion: 2
   m_LocalRotation: {x: -0.24447422, y: 0.6693608, z: -0.3717648, w: -0.5949617}
-  m_LocalPosition: {x: 2.721181, y: 3.9724398, z: 1.1456646}
+  m_LocalPosition: {x: 2.808603, y: 3.9724398, z: 1.1456647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 1300984604973767628}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0027646967, y: -0.9971716, z: 0.058455124, w: 0.047162283}
-  m_LocalPosition: {x: 0.06857631, y: 1.9946287, z: 1.7368273}
+  m_LocalPosition: {x: 0.15560795, y: 1.9946287, z: 1.7285763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6200,7 +6200,7 @@ Rigidbody:
   m_GameObject: {fileID: 2565867780468246529}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -6285,7 +6285,7 @@ MonoBehaviour:
   freeCam: {fileID: 6553338690653559496}
   contactlayers:
     serializedVersion: 2
-    m_Bits: 6528
+    m_Bits: 4480
   moving: {fileID: 425097218036768760}
   debugtransform: {fileID: 1872776679189424113}
   fireTransform: {fileID: 3546593221160455132}
@@ -6819,7 +6819,7 @@ Transform:
   m_GameObject: {fileID: 6703199285050675800}
   serializedVersion: 2
   m_LocalRotation: {x: -0.19048342, y: 0.75823605, z: -0.4317923, w: -0.44983295}
-  m_LocalPosition: {x: 2.721181, y: 3.9724398, z: 1.1456646}
+  m_LocalPosition: {x: 2.808603, y: 3.9724398, z: 1.1456647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7302,7 +7302,7 @@ Transform:
   m_GameObject: {fileID: 8962929475885296643}
   serializedVersion: 2
   m_LocalRotation: {x: -0.19468422, y: 0.7016812, z: -0.32004407, w: -0.6060639}
-  m_LocalPosition: {x: 2.721181, y: 3.9724398, z: 1.1456646}
+  m_LocalPosition: {x: 2.808603, y: 3.9724398, z: 1.1456647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

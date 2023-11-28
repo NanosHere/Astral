@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7827586494617195446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8581642862916592528}
+  - component: {fileID: 346646778864433764}
+  - component: {fileID: 1397564915001532541}
+  - component: {fileID: 5605709927574689021}
+  - component: {fileID: 2884618736611934401}
+  - component: {fileID: -8036901346429001943}
+  m_Layer: 12
+  m_Name: UFlower6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8581642862916592528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.10159373, y: 0, z: -10.370496}
+  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &346646778864433764
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  m_Mesh: {fileID: 5529198970863756547, guid: 4426f69062b8e9f4385b0ddb54edad07, type: 3}
+--- !u!23 &1397564915001532541
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0b41405c83b1d3943a688d1f28adab27, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 2
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5605709927574689021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd5e5ddd242bd64581fb5ed9c0e0507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PolyMesh:
+    name: Flowers6
+    vertices:
+    - {x: -0.018352298, y: 0.00007992, z: 0.02266471}
+    - {x: 0.016560968, y: 0.00007992, z: -0.01665833}
+    - {x: 0.016560966, y: 0.052665446, z: -0.016658332}
+    - {x: -0.0183523, y: 0.052665446, z: 0.02266471}
+    - {x: -0.0237409, y: 0.00007992, z: -0.010012357}
+    - {x: 0.021949567, y: 0.00007992, z: 0.016018752}
+    - {x: 0.021949569, y: 0.052665446, z: 0.01601875}
+    - {x: -0.0237409, y: 0.052665446, z: -0.010012357}
+    normals:
+    - {x: 0.7477921, y: 0, z: 0.6639329}
+    - {x: 0.7477921, y: 0, z: 0.6639329}
+    - {x: 0.7477921, y: 0, z: 0.6639329}
+    - {x: 0.74779207, y: 0, z: 0.663933}
+    - {x: -0.4950242, y: 0, z: 0.8688792}
+    - {x: -0.49502426, y: 0, z: 0.8688792}
+    - {x: -0.4950242, y: 0, z: 0.8688792}
+    - {x: -0.4950242, y: 0, z: 0.8688792}
+    colors: []
+    tangents:
+    - {x: -0.66393286, y: 0, z: 0.7477921, w: -1}
+    - {x: -0.663933, y: 0, z: 0.7477921, w: -1}
+    - {x: -0.66393286, y: 0, z: 0.7477921, w: -1}
+    - {x: -0.66393304, y: 0, z: 0.74779207, w: -1}
+    - {x: -0.8688792, y: 0, z: -0.49502426, w: -1}
+    - {x: -0.8688792, y: 0, z: -0.49502426, w: -1}
+    - {x: -0.8688792, y: 0, z: -0.49502426, w: -1}
+    - {x: -0.8688792, y: 0, z: -0.49502426, w: -1}
+    uv0:
+    - {x: 1.011022, y: 0.332746, z: 0, w: 0}
+    - {x: 0.77803594, y: 0.332746, z: 0, w: 0}
+    - {x: 0.778036, y: 0.565731, z: 0, w: 0}
+    - {x: 1.011022, y: 0.565731, z: 0, w: 0}
+    - {x: 1.011022, y: 0.332746, z: 0, w: 0}
+    - {x: 0.7780359, y: 0.33274597, z: 0, w: 0}
+    - {x: 0.778036, y: 0.565731, z: 0, w: 0}
+    - {x: 1.011022, y: 0.565731, z: 0, w: 0}
+    uv1: []
+    uv2: []
+    uv3: []
+    m_Triangles: 000000000100000002000000000000000200000003000000040000000500000006000000040000000600000007000000
+    m_SubMeshes:
+    - m_Indexes: 000000000100000002000000000000000200000003000000040000000500000006000000040000000600000007000000
+      m_Topology: 0
+    m_Mesh: {fileID: 0}
+  m_SkinMeshRef: {fileID: 0}
+  m_OriginalMeshObject: {fileID: 5529198970863756547, guid: 4426f69062b8e9f4385b0ddb54edad07,
+    type: 3}
+  m_Mode: 0
+--- !u!205 &2884618736611934401
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.00089566596, y: 0.026372682, z: 0.0030031893}
+  m_Size: 0.1
+  m_FadeMode: 1
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.10914601
+    fadeTransitionWidth: 0.341
+    renderers:
+    - renderer: {fileID: 1397564915001532541}
+  m_Enabled: 1
+--- !u!114 &-8036901346429001943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827586494617195446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1648adab124a654428ad45f99b9c8b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value1: 0
+  value2: 0
+  value3: 0
+  Aoe: []
+  disolvematerial: {fileID: 0}

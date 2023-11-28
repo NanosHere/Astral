@@ -60,6 +60,7 @@ Material:
     - _SimpleDisolvesize: 10
     - _SimpleDisolvesize2: 0
     - _SimpleDisolvesize3: 0
+    - _SimpleDisolvesize4: 0
     - _multy: 10
     - _offset: 0
     - _splitValue: 0
@@ -68,6 +69,7 @@ Material:
     - _ObjectPosition: {r: -2.8505354, g: 2.7196174, b: 24.639542, a: 0}
     - _ObjectPosition2: {r: 4.263811, g: 0.09771204, b: 7.220128, a: 0}
     - _ObjectPosition3: {r: -6.8881965, g: 2.6040595, b: 20.196892, a: 0}
+    - _ObjectPosition4: {r: 0, g: 0, b: 0, a: 0}
     - _Object_Position: {r: 0, g: 0, b: 0, a: 0}
-    - _base_colour: {r: 0.3962264, g: 0.31074318, b: 0.21867213, a: 0}
+    - _base_colour: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0}
   m_BuildTextureStacks: []

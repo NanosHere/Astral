@@ -50,16 +50,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _NormalValue: 0.29
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SimpleDisolvesize: 0
     - _SimpleDisolvesize2: 0
     - _SimpleDisolvesize3: 0
+    - _SimpleDisolvesize4: 0
     m_Colors:
     - _EdgeColor: {r: 0.8113207, g: 0, b: 0, a: 0}
     - _ObjectPosition: {r: 999, g: 999, b: 999, a: 0}
     - _ObjectPosition2: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectPosition3: {r: 0, g: 0, b: 0, a: 0}
+    - _ObjectPosition4: {r: 0, g: 0, b: 0, a: 0}
     - _UV: {r: 0, g: 0, b: 0, a: 0}
     - _base_colour: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 0}
     - _emmision: {r: 0, g: 0, b: 0, a: 0}

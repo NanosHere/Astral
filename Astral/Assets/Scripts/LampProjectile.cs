@@ -33,11 +33,11 @@ public class LampProjectile : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hitsomething");
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log("hitsomething");
+        //Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "World1" )
         {
-            Debug.Log("hitbody");
+            //Debug.Log("hitbody");
             
             rigidbody.isKinematic = true;
             aoe.gameObject.SetActive(true);

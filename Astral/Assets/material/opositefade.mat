@@ -51,6 +51,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _NormalValue: 0.77
     - _SimpleDisolvesize: 10
     m_Colors:
     - _ObjectPosition: {r: -2.8505354, g: 2.7196174, b: 24.639542, a: 0}

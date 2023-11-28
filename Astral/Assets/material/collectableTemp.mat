@@ -38,6 +38,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _NormalValue: 0
     - _SimpleDisolvesize: 0
     m_Colors:
     - _ObjectPosition: {r: 999, g: 999, b: 999, a: 0}
