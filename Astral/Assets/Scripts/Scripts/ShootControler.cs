@@ -33,14 +33,23 @@ public class ShootControler : MonoBehaviour
         cam = Camera.main;
     }
 
+    private void LateUpdate()
+    {
+        GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
+        lampsOut = lamps.Length;
+    }
     // Update is called once per frame
     void Update()
     {
-
+        
 
         if (Input.GetKey(KeyCode.Q))
         {
-            StartCoroutine(returnLamp());
+            StartCoroutine(returnLamp(true));
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            StartCoroutine(returnLamp(false));
         }
 
         //start aim mode
@@ -183,35 +192,62 @@ public class ShootControler : MonoBehaviour
     }
 
     // when q is pressed destroy object and let player shoot one
-    IEnumerator returnLamp()
+    IEnumerator returnLamp(bool Return)
     {
       
-        
-        yield return new WaitForSeconds(.001f);
+        if(Return == true) { 
+            yield return new WaitForSeconds(.001f);
 
-        GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
-        //Debug.Log(lamps.Length);
-        switch (lamps.Length)
-        {
-            case 0:
+            GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
+            //Debug.Log(lamps.Length);
+            switch (lamps.Length)
+            {
+                case 0:
 
-                break;
-            case 1:
-                lamps[0].GetComponent<LampProjectile>().destroyThis();
-                lampsOut = 0;
-                break;
-            case 2:
-                lamps[0].GetComponent<LampProjectile>().destroyThis();
-                lampsOut = 1;
-                break;
-            case 3:
-                lamps[0].GetComponent<LampProjectile>().destroyThis();
-                lampsOut = 2;
-                break;
+                    break;
+                case 1:
+                    lamps[0].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 0;
+                    break;
+                case 2:
+                    lamps[0].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 1;
+                    break;
+                case 3:
+                    lamps[0].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 2;
+                    break;
 
 
+            }
         }
+        else
+        {
+            yield return new WaitForSeconds(.001f);
 
+            GameObject[] lamps = GameObject.FindGameObjectsWithTag("effector");
+            //Debug.Log(lamps.Length);
+            switch (lamps.Length)
+            {
+                case 0:
+
+                    break;
+                case 1:
+                    lamps[0].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 0;
+                    break;
+                case 2:
+                    lamps[1].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 1;
+                    break;
+                case 3:
+                    lamps[2].GetComponent<LampProjectile>().destroyThis();
+                    //lampsOut = 2;
+                    break;
+
+
+            }
+        }
     }
 
 
