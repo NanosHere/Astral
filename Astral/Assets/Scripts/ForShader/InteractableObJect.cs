@@ -6,7 +6,7 @@ public class InteractableObJect : MonoBehaviour
 {
     public bool isInteractable;
     public int interacted=0;
-
+    public int soundNumber = 0;
 
     // Start is called before the first frame update
     void Start()
