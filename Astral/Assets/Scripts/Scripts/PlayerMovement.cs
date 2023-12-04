@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("PhysicsMat")]
     public PhysicMaterial PMat;
 
+    [Header("Animation")]
+    public Animator anim;
+
 
 
     void Start()
@@ -57,16 +60,20 @@ public class PlayerMovement : MonoBehaviour
                 PMat.dynamicFriction = 1;
                 PMat.staticFriction = 1;
                 maxSpeed = 10;
+                anim.SetBool("IsJump", false);
+                anim.SetBool("IsDouble", false);
                 //Debug.Log(groundcheckHit.transform.gameObject);
-            
-           
+
+
                 isDoubleJump = false;
+                anim.SetBool("IsGrounded", true);
             }
 
         }
         else
         {
             isGrounded = false;
+            anim.SetBool("IsGrounded", false);
             PMat.dynamicFriction = 0;
             PMat.staticFriction = 0;
             maxSpeed = 7.5f;
@@ -75,9 +82,11 @@ public class PlayerMovement : MonoBehaviour
         //check to see if user press the space bar
         if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
         {
+            //anim.SetTrigger("Jump");
             triggerJump = true;
             StartCoroutine(Jumping());
-            
+            //anim.ResetTrigger("Jump");
+
         }
     }
 
@@ -122,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
         //Apply the movement vector to the current position, which is
         //multiplied by deltaTime and speed for a smooth MovePosition
         m_Rigidbody.MovePosition(transform.position + addInput * Time.deltaTime * curSpeed);
+        anim.SetFloat("Speed", curSpeed);
 
         //using inputs find the players rotation direction.
         Vector3 viewdir = transform.position - new Vector3(Camera.main.transform.position.x, transform.position.y, Camera.main.transform.position.z);
@@ -154,13 +164,21 @@ public class PlayerMovement : MonoBehaviour
         Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
 
 
-        
+
 
         return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
 
        
 
     }
+    /*
+    public int Getsound()
+    {
+        Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
+        return groundcheckHit.collider.gameObject.GetComponent<InteractableObJect>().soundNumber;
+    }
+
+    */
 
     IEnumerator Jumping()
     {
@@ -174,7 +192,8 @@ public class PlayerMovement : MonoBehaviour
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
                     particles.Play();
-                }
+                    anim.SetBool("IsJump", true);
+            }
                  else
                   {
                     triggerJump = false;
@@ -185,7 +204,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (isDoubleJump == false)
                 {
-                   
+
+                    anim.SetBool("IsDouble", true);
                     isDoubleJump = true;
                     m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, 0, m_Rigidbody.velocity.z);
                     m_Rigidbody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);

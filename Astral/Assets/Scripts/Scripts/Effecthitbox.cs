@@ -10,9 +10,15 @@ public class Effecthitbox : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-
-        //Debug.Log(other);
+        
+        Debug.Log(other);
         //Physics.IgnoreLayerCollision(6, 1, true);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Debug.Log("playerEnter");
+            other.GetComponent<FootStepPlayer>().insideRange = false;
+        }
+
         if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
            
@@ -64,6 +70,10 @@ public class Effecthitbox : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
 
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            other.GetComponent<FootStepPlayer>().insideRange = true;
+        }
         //Debug.Log(other);
         if (other.gameObject.layer == LayerMask.NameToLayer("World1"))
         {
