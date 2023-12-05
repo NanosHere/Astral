@@ -21,18 +21,18 @@ public class FootStepPlayer : MonoBehaviour
         RaycastHit hit;
         if(step== false) {
 
-            if(insideRange == true)
-            {
+            //if(insideRange == true)
+            //{
                 Physics.Raycast(groundpoint.transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, W2mask);
-                currentClip = hit.transform.GetComponent<InteractableObJect>().soundNumber;
-                AudioSource.PlayOneShot(clipSourceW2[currentClip]);
-            }
-            else
-            {
-                Physics.Raycast(groundpoint.transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, W1mask);
-                currentClip = hit.transform.GetComponent<InteractableObJect>().soundNumber;
-                AudioSource.PlayOneShot(clipSourceW1[currentClip]);
-            }
+                //currentClip = hit.transform.GetComponent<InteractableObJect>().soundNumber;
+                AudioSource.PlayOneShot(clipSourceW2[0]);
+           // }
+           // else
+            //{
+            //    Physics.Raycast(groundpoint.transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f, W1mask);
+             //   currentClip = hit.transform.GetComponent<InteractableObJect>().soundNumber;
+             //   AudioSource.PlayOneShot(clipSourceW1[currentClip]);
+            //}
 
            // Physics.Raycast(groundpoint.transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f);
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
