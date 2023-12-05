@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class HudControl : MonoBehaviour
 {
@@ -18,10 +19,15 @@ public class HudControl : MonoBehaviour
     public bool MenuOpen;
     public bool collectionOpen;
 
+    [Header("Input")]
+     public InputActionReference menuControls;
+    public InputActionReference jumpControls;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        menuControls.action.Enable();
         ShootCanvas.SetActive(true);
         hudcanvas.SetActive(true);
         pauseCanvas.SetActive(false);
@@ -34,7 +40,7 @@ public class HudControl : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (menuControls.action.triggered)
         {
             EffectMenu();
         }
@@ -88,6 +94,7 @@ public class HudControl : MonoBehaviour
     {
         if (MenuOpen == true)
         {
+            jumpControls.action.Enable();
             controlsOpen = false;
             controls.SetActive(false);
             ShootCanvas.SetActive(true);
@@ -103,7 +110,7 @@ public class HudControl : MonoBehaviour
         }
         else
         {
-
+            jumpControls.action.Disable();
             ShootCanvas.SetActive(false);
             hudcanvas.SetActive(false);
             pauseCanvas.SetActive(true);

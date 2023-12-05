@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
                 maxSpeed = 10;
                 anim.SetBool("IsJump", false);
                 anim.SetBool("IsDouble", false);
-                Debug.Log(groundcheckHit.transform.gameObject);
+                //Debug.Log(groundcheckHit.transform.gameObject);
 
 
                 isDoubleJump = false;
