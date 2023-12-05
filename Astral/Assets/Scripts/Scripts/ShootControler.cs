@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ShootControler : MonoBehaviour
 {
@@ -27,9 +28,20 @@ public class ShootControler : MonoBehaviour
     
     [SerializeField]
     private Transform fireTransform;
+
+    [Header("Input")]
+    public InputActionReference ZoomControl;
+    public InputActionReference ShootControl;
+    public InputActionReference ReturnFirstControl;
+    public InputActionReference ReturnLastControl;
+
     // Start is called before the first frame update
     void Start()
     {
+        ZoomControl.action.Enable();
+        ShootControl.action.Enable();
+        ReturnFirstControl.action.Enable();
+        ReturnLastControl.action.Enable();
         cam = Camera.main;
     }
 
@@ -43,17 +55,17 @@ public class ShootControler : MonoBehaviour
     {
         
 
-        if (Input.GetKey(KeyCode.Q))
+        if (ReturnLastControl.action.triggered)
         {
             StartCoroutine(returnLamp(true));
         }
-        if (Input.GetKey(KeyCode.E))
+        if (ReturnFirstControl.action.triggered)
         {
             StartCoroutine(returnLamp(false));
         }
 
         //start aim mode
-        if (Input.GetKeyDown(KeyCode.Mouse1) && aimMode == false )
+        if (ZoomControl.action.triggered && aimMode == false )
         {
 
 
@@ -64,7 +76,7 @@ public class ShootControler : MonoBehaviour
             freeCam.GetComponent<Cinemachine.CinemachineFreeLook>().Priority = 9;
         }
         //stop aim mode
-        else if(Input.GetKeyUp(KeyCode.Mouse1) && aimMode == true )
+        else if(ZoomControl.action.triggered && aimMode == true )
         {
             aimMode = false;
             resetAim = false;
@@ -135,7 +147,7 @@ public class ShootControler : MonoBehaviour
 
 
             // launch the lamp.
-            if (Input.GetKey(KeyCode.Mouse0) && lampsOut < 3 && reset == true )
+            if (ShootControl.action.triggered && lampsOut < 3 && reset == true )
             {
                 
                 reset = false;

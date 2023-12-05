@@ -130,7 +130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568103370039612408}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.24447422, y: 0.6693609, z: -0.3717648, w: -0.5949617}
+  m_LocalRotation: {x: -0.24447422, y: 0.6693608, z: -0.3717648, w: -0.5949617}
   m_LocalPosition: {x: 2.808603, y: 3.9724398, z: 1.1456647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 9198434856488336135}
   - component: {fileID: 5129618449208300097}
   - component: {fileID: 428034521693226908}
+  - component: {fileID: 373991850927022835}
   m_Layer: 0
   m_Name: aimcam
   m_TagString: Player
@@ -431,6 +432,22 @@ MonoBehaviour:
   IgnoreTag: 
   AimDistance: 200
   AimTargetReticle: {fileID: 0}
+--- !u!114 &373991850927022835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300984604973767628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  AutoEnableInputs: 1
+  XYAxis: {fileID: 4283957137745689346, guid: fe83245d4e6b270438582860494f371c, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!1 &1583891390100156084
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,15 +540,15 @@ MonoBehaviour:
   m_RecenterTarget: 0
   m_VerticalAxis:
     Value: 6.7097845
-    m_SpeedMode: 0
-    m_MaxSpeed: 300
-    m_AccelTime: 0.1
+    m_SpeedMode: 1
+    m_MaxSpeed: 0.2
+    m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
-    m_MinValue: -70
-    m_MaxValue: 70
+    m_MinValue: -180
+    m_MaxValue: 180
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0
@@ -547,15 +564,15 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_HorizontalAxis:
     Value: -174.5843
-    m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_SpeedMode: 1
+    m_MaxSpeed: 0.2
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
-    m_MinValue: -180
-    m_MaxValue: 180
+    m_MinValue: -360
+    m_MaxValue: 360
     m_Wrap: 1
     m_Recentering:
       m_enabled: 0
@@ -5641,7 +5658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074656864147795865}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0033623027, y: 0.7235472, z: -0.08152689, w: -0.6854353}
+  m_LocalRotation: {x: 0.099675, y: 0.41039154, z: 0.00091287494, w: -0.90644526}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5754,7 +5771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.64835215, z: -5.777799}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -5766,7 +5783,7 @@ MonoBehaviour:
   m_Heading:
     m_Definition: 2
     m_VelocityFilterStrength: 4
-    m_Bias: -45
+    m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
     m_WaitTime: 1
@@ -6244,11 +6261,15 @@ MonoBehaviour:
   groundpos: {fileID: 7066482862210156864}
   mask:
     serializedVersion: 2
-    m_Bits: 6528
+    m_Bits: 72064
   sphereRadisus: 0.09
   particles: {fileID: 6174570104417387959}
   PMat: {fileID: 13400000, guid: 29fa614c646c673418887bad44d7404c, type: 2}
   anim: {fileID: 1751328814013270400}
+  MovementControl: {fileID: 5659281224935957529, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
+  JumpControl: {fileID: -3099703715600028560, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
 --- !u!114 &2724141227492695085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6291,6 +6312,14 @@ MonoBehaviour:
   moving: {fileID: 425097218036768760}
   debugtransform: {fileID: 1872776679189424113}
   fireTransform: {fileID: 3546593221160455132}
+  ZoomControl: {fileID: 2345595979619436897, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
+  ShootControl: {fileID: 3752973826482947375, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
+  ReturnFirstControl: {fileID: 2389476448730918954, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
+  ReturnLastControl: {fileID: 1999085674926636862, guid: fe83245d4e6b270438582860494f371c,
+    type: 3}
 --- !u!114 &6992364878823172916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6346,7 +6375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3424211406897858193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0033623027, y: 0.7235472, z: -0.08152689, w: -0.6854353}
+  m_LocalRotation: {x: 0.099675, y: 0.41039154, z: 0.00091287494, w: -0.90644526}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6635,6 +6664,7 @@ GameObject:
   - component: {fileID: 4703252508031112244}
   - component: {fileID: 9009324107205096760}
   - component: {fileID: 4534185081130724783}
+  - component: {fileID: 5132141355197713742}
   m_Layer: 0
   m_Name: FreeLook Camera
   m_TagString: Player
@@ -6651,7 +6681,7 @@ Transform:
   m_GameObject: {fileID: 6553338690653559496}
   serializedVersion: 2
   m_LocalRotation: {x: 0.040737398, y: -0.6493434, z: 0.034870114, w: 0.75860256}
-  m_LocalPosition: {x: 0.88246673, y: 2.796, z: 9.308264}
+  m_LocalPosition: {x: 4.4528813, y: 1.047648, z: 3.6816852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6700,9 +6730,9 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_YAxis:
-    Value: 0.5
+    Value: 0.2
     m_SpeedMode: 0
-    m_MaxSpeed: 2
+    m_MaxSpeed: 1
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -6725,8 +6755,8 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: -129.58427
-    m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_SpeedMode: 1
+    m_MaxSpeed: 0.2
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -6744,7 +6774,7 @@ MonoBehaviour:
   m_Heading:
     m_Definition: 2
     m_VelocityFilterStrength: 4
-    m_Bias: -45
+    m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
     m_WaitTime: 1
@@ -6795,6 +6825,22 @@ MonoBehaviour:
   m_Damping: 0.14
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 0
+--- !u!114 &5132141355197713742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553338690653559496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  AutoEnableInputs: 1
+  XYAxis: {fileID: 4283957137745689346, guid: fe83245d4e6b270438582860494f371c, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!1 &6703199285050675800
 GameObject:
   m_ObjectHideFlags: 3
@@ -7066,7 +7112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983202275455916042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0033623027, y: 0.7235472, z: -0.08152689, w: -0.6854353}
+  m_LocalRotation: {x: 0.099675, y: 0.41039154, z: 0.00091287494, w: -0.90644526}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7179,7 +7225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.64835215, z: -5.777799}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -7191,7 +7237,7 @@ MonoBehaviour:
   m_Heading:
     m_Definition: 2
     m_VelocityFilterStrength: 4
-    m_Bias: -45
+    m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
     m_WaitTime: 1
@@ -7447,7 +7493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.1, z: -9.35}
+  m_FollowOffset: {x: 0, y: -0.64835215, z: -5.777799}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 0
@@ -7459,7 +7505,7 @@ MonoBehaviour:
   m_Heading:
     m_Definition: 2
     m_VelocityFilterStrength: 4
-    m_Bias: -45
+    m_Bias: 0
   m_RecenterToTargetHeading:
     m_enabled: 0
     m_WaitTime: 1
