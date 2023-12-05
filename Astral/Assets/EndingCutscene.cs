@@ -47,7 +47,7 @@ public class EndingCutscene : MonoBehaviour
 
     public void GameOverScreen()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
 }
