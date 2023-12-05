@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ToMainMenu : MonoBehaviour
 {
-  public void ToMain()
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    public void ToMain()
     {
         SceneManager.LoadScene(0);
     }
