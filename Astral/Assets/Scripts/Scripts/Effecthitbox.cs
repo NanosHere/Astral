@@ -11,11 +11,11 @@ public class Effecthitbox : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         
-        Debug.Log(other);
+        //Debug.Log(other);
         //Physics.IgnoreLayerCollision(6, 1, true);
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            Debug.Log("playerEnter");
+            //Debug.Log("playerEnter");
             other.GetComponent<FootStepPlayer>().insideRange = false;
         }
 
