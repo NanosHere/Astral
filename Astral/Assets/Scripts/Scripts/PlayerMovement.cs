@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -34,11 +35,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animation")]
     public Animator anim;
 
-
+    [Header("Input")]
+    public InputActionReference MovementControl;
+    public InputActionReference JumpControl;
 
     void Start()
     {
-
+        MovementControl.action.Enable();
+        JumpControl.action.Enable();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         //Fetch the Rigidbody from the GameObject with this script attached
@@ -47,13 +51,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector2 movement = MovementControl.action.ReadValue<Vector2>();
+
+        input = new Vector3(movement.x, 0, movement.y);
         // check to see if player is on the ground
         
         if (checkGround() == true)
         {
+
             if (groundcheckHit.transform.gameObject.GetComponent<InteractableObJect>().isInteractable == true)
             {
+                
                 isGrounded = true;
                 triggerJump = false;
                 //isDoubleJump = false;
@@ -62,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
                 maxSpeed = 10;
                 anim.SetBool("IsJump", false);
                 anim.SetBool("IsDouble", false);
-                //Debug.Log(groundcheckHit.transform.gameObject);
+                Debug.Log(groundcheckHit.transform.gameObject);
 
 
                 isDoubleJump = false;
@@ -80,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             
         }
         //check to see if user press the space bar
-        if (Input.GetKeyDown(KeyCode.Space) && triggerJump == false)
+        if (JumpControl.action.triggered && triggerJump == false)
         {
             //anim.SetTrigger("Jump");
             triggerJump = true;
@@ -161,12 +169,12 @@ public class PlayerMovement : MonoBehaviour
     // check if player is on ground
     bool checkGround()
     {
-        Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
+        Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f, mask);
 
 
 
 
-        return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f);
+        return Physics.SphereCast(groundpos.position, sphereRadisus, Vector3.down, out groundcheckHit, .1f, mask);
 
        
 
