@@ -6308,7 +6308,7 @@ MonoBehaviour:
   freeCam: {fileID: 6553338690653559496}
   contactlayers:
     serializedVersion: 2
-    m_Bits: 4480
+    m_Bits: 384
   moving: {fileID: 425097218036768760}
   debugtransform: {fileID: 1872776679189424113}
   fireTransform: {fileID: 3546593221160455132}
