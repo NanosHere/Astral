@@ -110,11 +110,11 @@ public class PlayerMovement : MonoBehaviour
         input = Vector3.ClampMagnitude(input, 1);
         if (input != Vector3.zero)
         {
-            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, Time.deltaTime*1f);
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, Time.deltaTime*1.5f);
         }
         else
         {
-            curSpeed = Mathf.Lerp(curSpeed, 0, Time.deltaTime*4);
+            curSpeed = Mathf.Lerp(curSpeed, 0, Time.deltaTime*3);
 
         }
 

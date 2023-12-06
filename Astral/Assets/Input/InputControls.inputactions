@@ -161,7 +161,7 @@
                     "id": "a1a2a88c-7c1e-4fce-a8c3-8ef3307a00ca",
                     "path": "2DVector",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": true,
