@@ -9,6 +9,8 @@ TagManager:
   - effector
   - killbox
   - World2
+  - ExtraMusic
+  - IntroMusic
   layers:
   - Default
   - TransparentFX
