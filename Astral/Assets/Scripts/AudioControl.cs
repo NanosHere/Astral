@@ -29,6 +29,10 @@ public class AudioControl : MonoBehaviour
         DontDestroyOnLoad(this.transform.gameObject);
         mainaudio.Play();
     }
+    public void simplePlay()
+    {
+        mainaudio.Play();
+    }
 
     public void StopMusic()
     {
