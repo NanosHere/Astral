@@ -10,6 +10,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField]Button main;
     [SerializeField] Button control;
 
+    private void Start()
+    {
+        
+    }
     private void Awake()
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("ExtraMusic");
