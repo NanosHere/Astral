@@ -163,7 +163,7 @@ public class HudControl : MonoBehaviour
         {
 
             // pause is on
-            resumeButton.Select();
+
             jumpControls.action.Disable();
             ShootCanvas.SetActive(false);
             hudcanvas.SetActive(false);
@@ -172,6 +172,7 @@ public class HudControl : MonoBehaviour
             Cursor.visible = true;
             MenuOpen = true;
             Time.timeScale = 0;
+            resumeButton.Select();
         }
     }
 
